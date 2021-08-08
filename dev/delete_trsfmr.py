@@ -18,9 +18,12 @@ def token_delete(binary_tag, x0, x1):
             x0_new.append(x0[i])
             x1_new.append(x1[i])
 
-    while len(x0_new) < len(x0):
-        x0_new.append(0)
-        x1_new.append(0)
+    num_pad = len(x0) - len(x0_new)
+    x0_new += [0] * num_pad
+    x1_new += [0] * num_pad
+    # while len(x0_new) < len(x0):
+    #     x0_new.append(0)
+    #     x1_new.append(0)
     return x0_new, x1_new
 
 
@@ -143,6 +146,7 @@ def seq_delete(num_del, info, idx_trans_fn, x0, x1, x2):
 
 
 
+
 def get_seq_deleter(g_val):
     def innner_deleter(g, num_del, x0, x1):
         length = len(x0)
@@ -159,7 +163,6 @@ def get_seq_deleter(g_val):
                 l = l * 2
                 v = random.random()
             return min(l, length)
-
         indice = []
         for i in range(num_del):
             del_len = sample_len()
@@ -172,7 +175,8 @@ def get_seq_deleter(g_val):
         for idx in indice:
             mask[idx] = 1
 
-        return token_delete(mask, x0, x1), mask
+        ret = token_delete(mask, x0, x1), mask
+        return ret
     return partial(innner_deleter, g_val)
 
 

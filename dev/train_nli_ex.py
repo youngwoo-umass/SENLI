@@ -1,29 +1,24 @@
 import argparse
-import os
-import re
+import datetime
 import sys
-
-from tensorflow.python.data.experimental import AutoShardPolicy
-from tensorflow.python.distribute.distribute_lib import Strategy
-
-from tf_logging import senli_logging
-
 from functools import partial
-from typing import Tuple, Callable, List
-import numpy as np
-from tensorflow.python.types.core import Tensor
-
-from dev.explain_model import CrossEntropyModeling, CorrelationModeling, tag_informative_eq, ExplainModeling
-from dev.explain_trainer import ExplainTrainerM
-from dev.nli_common import get_nli_data, tags
-from dev.bert_common import BERT_CLS, eval_fn, ModelConfig, BERT_CLS_EX, load_pooler, is_interesting_step
+from typing import Tuple, Callable, List, Dict
 
 import bert
-from tensorflow import keras
+import numpy as np
 import tensorflow as tf
+from tensorflow import keras
+from tensorflow.python.distribute.distribute_lib import Strategy
 
-from dev.optimize import get_learning_rate_w_warmup, AdamWeightDecayOptimizer
-from path_manager import bert_model_folder
+from dev.bert_common import BERT_CLS_EX, eval_fn, load_pooler
+from dev.ex_eval import EvalSet, DataID, scores_to_ap
+from dev.explain_model import CrossEntropyModeling, CorrelationModeling, tag_informative_eq
+from dev.explain_trainer import ExplainTrainerM
+from dev.nli_common import tags
+from dev.optimize import get_optimizer
+from dev.tf_helper import apply_gradient_warning_less, distribute_dataset
+from misc_lib import average
+from senli_log import senli_logging
 
 
 class RunConfigEx:
@@ -75,7 +70,7 @@ def train_cls(model: keras.Model, item, loss_fn, optimizer):
         prediction, _ = model([x1, x2], training=True)
         loss = loss_fn(y, prediction)
 
-    senli_logging.debug("train_ex_tf_fn called")
+    senli_logging.debug("train_cls called")
     gradients = tape.gradient(loss, model.trainable_variables)
     apply_gradient_warning_less(optimizer, gradients, model.trainable_variables)
     return loss
@@ -95,24 +90,9 @@ class ExTrainConfig:
     num_deletion = 20
     g_val = 0.5
     save_train_payload = False
-    # drop_thres = 0.3
-    drop_thres = 0.0
+    drop_thres = 0.3
 
 
-def apply_gradient_warning_less(optimizer, gradients, trainable_variables):
-    l = [(grad, var) for (grad, var) in zip(gradients, trainable_variables) if grad is not None]
-    optimizer.apply_gradients(l)
-
-
-def distribute_dataset(strategy, dataset):
-    options = tf.data.Options()
-    options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA
-    dataset = dataset.with_options(options)
-    dataset = strategy.experimental_distribute_dataset(dataset)
-    return dataset
-
-
-# This defines graph
 def init_ex_trainer(bert_cls_ex: BERT_CLS_EX,
                     run_config,
                     forward_run: Callable,
@@ -150,6 +130,7 @@ def init_ex_trainer(bert_cls_ex: BERT_CLS_EX,
         from_logits=True
     )
     optimizer = tf.optimizers.Adam(learning_rate=lr)
+    optimizer = get_optimizer(2e-5, run_config.train_step)
 
     @tf.function
     def train_ex_tf_fn(*ex_train_batch):
@@ -194,7 +175,7 @@ def init_ex_trainer(bert_cls_ex: BERT_CLS_EX,
         ex_losses = explain_trainer.weak_supervision(cls_batch, train_ex_tf_fn_distributed)
         out_str = "ex_train_loss : "
         for tag_idx, loss_val in enumerate(ex_losses):
-            out_str += " {0:.2f}".format(loss_val)
+            out_str += " {0:.4f}".format(loss_val)
         return out_str
 
     return train_ex_fn
@@ -204,6 +185,14 @@ def init_ex_trainer(bert_cls_ex: BERT_CLS_EX,
 def get_cls_logits(model, batch):
     cls_logits, _ = model(batch, training=False)
     return cls_logits
+
+
+@tf.function
+def get_ex_scores(model: keras.Model, batch):
+    _, ex_logits = model(batch, training=False)
+    ex_logits = tf.stack(ex_logits, axis=1)
+    probs = tf.nn.softmax(ex_logits, axis=3)
+    return probs[:, :, :, 1]
 
 
 def load_from_nli_saved_model(bert_cls_ex: BERT_CLS_EX, ckpt_path):
@@ -227,6 +216,16 @@ def load_from_nli_saved_model(bert_cls_ex: BERT_CLS_EX, ckpt_path):
     return
 
 
+@tf.function
+def eval_fn(model, item, loss_fn, dev_loss, dev_acc):
+    x1, x2, y = item
+    prediction, _ = model([x1, x2], training=False)
+    loss = loss_fn(y, prediction)
+    dev_loss.update_state(loss)
+    pred = tf.argmax(prediction, axis=1)
+    dev_acc.update_state(y, pred)
+
+
 class EvalObject:
     def __init__(self, model, eval_batches, dist_strategy: Strategy, compute_loss):
         self.loss = tf.keras.metrics.Mean(name='dev_loss')
@@ -246,6 +245,140 @@ class EvalObject:
         return eval_loss, eval_acc
 
 
+score_valid_policy = {
+    'match': [0],
+    'conflict': [0, 1],
+    'mismatch': [1]
+}
+
+
+def two_digit_float(f):
+    return "{0:.2f}".format(f)
+
+
+def dict_to_tuple_list(d):
+    out_l = []
+    for k, v in d.items():
+        out_l.append((k, v))
+
+    return out_l
+
+
+def merge_and_sort_scores(token_scores: List[Tuple[int, float]]) -> List[Tuple[int, float]]:
+    d = {}
+    for idx, score in token_scores:
+        if idx not in d:
+            d[idx] = score
+        else:
+            d[idx] = max(d[idx], score)
+
+    scores = dict_to_tuple_list(d)
+    scores.sort(key=lambda x: x[1], reverse=True)
+    return scores
+
+
+class ExEvaluator:
+    def __init__(self, model: keras.Model,
+                 tags: List[str],
+                 ex_eval_data: List[Tuple[str, EvalSet]],
+                 batch_size: int,
+                 dist_strategy: Strategy,
+                 summary_writer
+                 ):
+        self.loss = tf.keras.metrics.Mean(name='dev_loss')
+        self.acc = tf.keras.metrics.Accuracy(name='accuracy', dtype=None)
+        self.ex_eval_data: List[Tuple[str, EvalSet]] = ex_eval_data
+        self.model: keras.Model = model
+        self.dist_strategy: Strategy = dist_strategy
+        self.batch_size: int = batch_size
+        self.log_idx = 0
+        self.tags = tags
+        self.summary_writer = summary_writer
+
+    def get_tag_idx_from_prefix(self, tag_prefix):
+        for tag_idx, tag in enumerate(tags):
+            if tag[0] == tag_prefix:
+                return tag_idx
+        raise Exception("Unexpected tag_prefix : {}".format(tag_prefix))
+
+
+    def do_eval(self, step_idx):
+        senli_logging.debug("ExEvaluator:do_eval ENTRY")
+        log_out = open("eval_log{}.txt".format(self.log_idx), "w")
+        self.log_idx += 1
+        output = []
+        for tag, eval_set in self.ex_eval_data:
+            data_id_to_ex_scores: Dict[DataID, np.array] = self.get_ex_scores(eval_set.dataset)
+            ap_list = []
+            log_out.write("tag: {}".format(tag))
+            tag_idx = tags.index(tag)
+            for data_id, ex_scores in data_id_to_ex_scores.items():
+                ex_scores_for_tag = ex_scores[tag_idx, :]
+                tokenize_mapping = eval_set.tokenize_mapping_d[data_id]
+                senli_logging.debug("tokenize_mapping {}".format(tokenize_mapping))
+                sent1_scores: List[Tuple[int, float]] = []
+                sent2_scores: List[Tuple[int, float]] = []
+                per_space_token_scores: List[List[Tuple[int, float]]] = [sent1_scores, sent2_scores]
+                senli_logging.debug("ex_scores.shape (batch, 3, 300) {}".format(ex_scores_for_tag.shape))
+                n_lookup_fail = 0
+                for idx, score in enumerate(ex_scores_for_tag):
+                    try:
+                        sent_idx, space_idx = tokenize_mapping[idx]
+                        # It will raise exception for [CLS], [SEP], [PAD], because they are not tokens from texts
+                        scores_per_sent: List[Tuple[int, float]] = per_space_token_scores[sent_idx]
+                        scores_per_sent.append((space_idx, score))
+                        n_lookup_fail = 0
+                    except KeyError:
+                        senli_logging.debug("KeyError at {}".format(idx))
+                        n_lookup_fail += 1
+                        # More than 5 consecutive KeyError should be PAD tokens
+                        if n_lookup_fail > 5:
+                            break
+
+                ap_for_instance = []
+                for sent_idx in score_valid_policy[tag]:
+                    s = "label: {}\n".format(eval_set.label_d[data_id][sent_idx])
+                    cur_sentence_scores = per_space_token_scores[sent_idx]
+                    score_len = len(cur_sentence_scores)
+                    assert score_len > 0
+                    s += "score_len: {}\n".format(score_len)
+                    scores = [s for idx, s in cur_sentence_scores]
+                    score_str = " ".join(map(two_digit_float, scores))
+                    s += "scores: {}\n".format(score_str)
+                    cur_sentence_scores_merged = merge_and_sort_scores(cur_sentence_scores)
+                    log_out.write(s)
+                    ap = scores_to_ap(eval_set.label_d[data_id][sent_idx],
+                                      cur_sentence_scores_merged)
+                    ap_for_instance.append(ap)
+                instance_ap = average(ap_for_instance)
+                ap_list.append(instance_ap)
+            mean_ap = average((ap_list))
+            output.append(mean_ap)
+            if self.summary_writer is not None:
+                with self.summary_writer.as_default():
+                    tf.summary.scalar('MAP:ex_{}'.format(tag), mean_ap, step=step_idx)
+
+        senli_logging.debug("ExEvaluator:do_eval EXIT")
+        return output
+
+    def get_ex_scores(self, dataset) -> Dict[DataID, np.array]:
+        senli_logging.debug("ExEvaluator:get_ex_scores ENTRY")
+        dataset = dataset.batch(self.batch_size)
+        data_id_to_ex_scores = {}
+        for batch in dataset:
+            x0, x1, data_id_batch = batch
+            args = self.model, (x0, x1)
+            per_replica = self.dist_strategy.run(get_ex_scores, args=args)
+            ex_scores_batch = self.dist_strategy.gather(per_replica, axis=0)
+            ex_scores_batch = ex_scores_batch.numpy()
+            assert type(ex_scores_batch) == np.ndarray
+            data_id_batch_np = data_id_batch.numpy()
+            for data_id, ex_logits in zip(data_id_batch_np, ex_scores_batch):
+                data_id_to_ex_scores[DataID(data_id)] = ex_logits
+        senli_logging.debug("ExEvaluator:get_ex_scores EXIT")
+        return data_id_to_ex_scores
+
+
 def load_checkpoint(bert_cls_ex: BERT_CLS_EX, run_config: RunConfigEx):
     checkpoint_path = run_config.init_checkpoint
     if run_config.checkpoint_type == 'bert':
@@ -255,102 +388,10 @@ def load_checkpoint(bert_cls_ex: BERT_CLS_EX, run_config: RunConfigEx):
         load_from_nli_saved_model(bert_cls_ex, run_config.init_checkpoint)
 
 
-def main():
-    # Train the model here
-    debug_run = False
-    bert_params = bert.params_from_pretrained_ckpt(bert_model_folder)
-    model_config = ModelConfig()
-    run_config: RunConfigEx = get_run_config()
-    step_per_epoch = int(400 * 1000 / 16)
-
-    if run_config.checkpoint_type == "bert":
-        step_to_start_ex_train = step_per_epoch * 2
-    elif run_config.checkpoint_type == "nli_saved_model":
-        step_to_start_ex_train = 0
-    else:
-        assert False
-
-    model_save_path: str = run_config.model_save_path
-    dist_strategy = tf.distribute.MirroredStrategy()
-    batch_size: int = run_config.batch_size
-    with dist_strategy.scope():
-        bert_cls_ex = BERT_CLS_EX(bert_params, model_config, len(tags))
-        model = bert_cls_ex.model
-
-        loss_fn_inner = tf.keras.losses.SparseCategoricalCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
-
-        def compute_loss(labels, predictions):
-            per_example_loss = loss_fn_inner(labels, predictions)
-            return tf.nn.compute_average_loss(per_example_loss, global_batch_size=batch_size)
-
-        def forward_run_fn(dist_batches) -> np.ndarray:
-            senli_logging.debug("forward_run_fn ENTRY")
-            out_t = []
-            for batch in dist_batches:
-                t = dist_strategy.run(get_cls_logits, (model, batch))
-                t = dist_strategy.gather(t, axis=0)
-                out_t.append(t.numpy())
-            senli_logging.debug("forward_run_fn EXIT")
-            return np.concatenate(out_t)
-
-        train_ex_tf_fn = init_ex_trainer(bert_cls_ex, run_config, forward_run_fn, dist_strategy)
-
-    optimizer = tf.optimizers.Adam(learning_rate=1e-5)
-    eval_batches, train_dataset = load_nli_dataset(batch_size, debug_run, model_config)
-    eval_batches = distribute_dataset(dist_strategy, eval_batches)
-    dist_train_dataset = distribute_dataset(dist_strategy, train_dataset)
-
-    eval_object = EvalObject(model, eval_batches, dist_strategy, compute_loss)
-    train_itr = iter(dist_train_dataset)
-
-    load_checkpoint(bert_cls_ex, run_config)
-    for step_idx in range(run_config.train_step):
-        f_do_cls_train = True
-        f_do_ex_train = step_idx >= step_to_start_ex_train
-        f_do_eval = step_idx % run_config.eval_every_n_step == 0
-        f_do_save = step_idx % run_config.save_every_n_step == 0
-
-        batch_item = next(train_itr)
-        x1, x2, y = batch_item
-        per_step_msg = "step {0}".format(step_idx)
-        if f_do_cls_train:
-            args = model, batch_item, compute_loss, optimizer
-            train_loss = distributed_train_step(dist_strategy, train_cls, args)
-            train_loss = np.array(train_loss)
-            per_step_msg += " train_cls_loss={0:.2f}".format(train_loss)
-
-        if f_do_ex_train:
-            batch_x = [x1, x2]
-            msg = train_ex_tf_fn(batch_x)
-            per_step_msg += " " + msg
-
-        if f_do_eval:
-            eval_loss, eval_acc = eval_object.do_eval()
-            per_step_msg += " dev_cls_loss={0:.2f} dev_cls_acc={1:.2f}".format(eval_loss, eval_acc)
-
-        if f_do_save:
-            model.save(model_save_path)
-            senli_logging.info("Model saved at {}".format(model_save_path))
-
-        if f_do_eval or is_interesting_step(step_idx):
-            senli_logging.info(per_step_msg)
-    senli_logging.info("Training completed")
-    model.save(model_save_path)
-    senli_logging.info("Model saved at {}".format(model_save_path))
-
-
-def load_nli_dataset(batch_size, debug_run, model_config):
-    dev_dataset = get_nli_data(model_config.max_seq_length, "dev_matched.tsv")
-    eval_batches = dev_dataset.batch(batch_size).take(10)
-    if debug_run:
-        train_dataset = get_nli_data(model_config.max_seq_length, "dev_matched.tsv")
-    else:
-        train_dataset = get_nli_data(model_config.max_seq_length, "train.tsv")
-    train_dataset = train_dataset.repeat(4).batch(batch_size)
-    return eval_batches, train_dataset
-
-
-if __name__ == "__main__":
-    main()
-
-
+def init_log():
+    current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    # train_log_dir = 'logs/gradient_tape/' + current_time + '/train'
+    test_log_dir = 'logs/gradient_tape/' + current_time + '/test'
+    # train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+    test_summary_writer = tf.summary.create_file_writer(test_log_dir)
+    return test_summary_writer

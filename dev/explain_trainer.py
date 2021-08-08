@@ -3,14 +3,19 @@ import tensorflow as tf
 
 from delete_trsfmr import *
 from misc_lib import *
-from tf_logging import senli_logging
+from senli_log import senli_logging
 from trainer.np_modules import *
+
 
 # Step 1) Prepare deletion RUNS
 def generate_alt_runs(x0, x1, probs,
                       compare_deletion_num,
                       sample_deleter,
                       ):
+    if tf.is_tensor(x0):
+        x0 = x0.numpy()
+        x1 = x1.numpy()
+
     def draw_sample_size():
         prob = [(1, 0.8), (2, 0.2)]
         v = random.random()
@@ -20,8 +25,6 @@ def generate_alt_runs(x0, x1, probs,
                 return n
         return 1
     senli_logging.debug("generate_alt_runs START")
-
-    senli_logging.debug("generate_alt_runs:: x^(0) forward done")
     instance_infos = []
     new_insts = []
     deleted_mask_list = []
@@ -118,7 +121,6 @@ class ExplainTrainerM:
                 alt_logits = [all_alt_logits[i] for i in info['indice_delete_random']]
                 deleted_mask_list = [all_deleted_mask_list[i] for i in info['indice_delete_random']]
                 good_action, best_score = self.get_best_deletion(informative_score_fn, init_output, alt_logits, deleted_mask_list)
-                senli_logging.debug("calc_reward: best_score={}".format(best_score))
 
                 if best_score > self.drop_thres:
                     label, mask = self.action_to_label(good_action)

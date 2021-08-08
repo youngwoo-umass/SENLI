@@ -63,14 +63,14 @@ class BERT_CLS:
 
 
 class BERT_CLS_EX:
-    def __init__(self, bert_params, config: ModelConfig, num_tags):
+    def __init__(self, bert_params, config: ModelConfig, num_tags, training):
         l_bert = bert.BertModelLayer.from_params(bert_params, name="bert")
         max_seq_len = config.max_seq_length
         num_classes = config.num_classes
 
         l_input_ids = keras.layers.Input(shape=(max_seq_len,), dtype='int32', name="input_ids")
         l_token_type_ids = keras.layers.Input(shape=(max_seq_len,), dtype='int32', name="segment_ids")
-        seq_out = l_bert([l_input_ids, l_token_type_ids])  # [batch_size, max_seq_len, hidden_size]
+        seq_out = l_bert([l_input_ids, l_token_type_ids], training=training)  # [batch_size, max_seq_len, hidden_size]
         self.seq_out = seq_out
         first_token = seq_out[:, 0, :]
         pooler = tf.keras.layers.Dense(bert_params.hidden_size, activation=tf.nn.tanh, name="bert/pooler/dense")

@@ -149,3 +149,16 @@ def get_train_op_from_grads_and_tvars(grads, tvars, lr, name='Adam', num_train_s
     train_op = tf.group(train_op, [global_step.assign(new_global_step)])
 
     return train_op
+
+
+def get_optimizer(lr: float, num_train_steps: int):
+    global_step = tf.compat.v1.train.get_or_create_global_step()
+    learning_rate = get_learning_rate_w_warmup(global_step, lr, num_train_steps, 0)
+    optimizer = AdamWeightDecayOptimizer(
+        learning_rate=learning_rate,
+        weight_decay_rate=0.02,
+        beta_1=0.9,
+        beta_2=0.999,
+        epsilon=1e-6,
+        exclude_from_weight_decay=["LayerNorm", "layer_norm", "bias"])
+    return optimizer

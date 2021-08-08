@@ -1,7 +1,7 @@
 import csv
 import os
 from typing import List, Iterable, Callable, Dict, Tuple, Set
-from tf_logging import senli_logging
+from senli_log import senli_logging
 
 import bert
 from bert.tokenization.bert_tokenization import FullTokenizer

@@ -3,7 +3,7 @@ from typing import Tuple
 
 from dev.nli_common import get_nli_data
 from dev.bert_common import BERT_CLS, eval_fn, get_run_config, ModelConfig, load_pooler, is_interesting_step
-from tf_logging import senli_logging
+from senli_log import senli_logging
 
 import bert
 import tensorflow as tf
