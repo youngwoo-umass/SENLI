@@ -64,7 +64,7 @@ def main():
 
         train_ex_tf_fn = init_ex_trainer(bert_cls_ex, run_config, forward_run_fn, dist_strategy)
 
-    optimizer = tf.optimizers.Adam(learning_rate=2e-5)
+    optimizer = tf.optimizers.Adam(learning_rate=run_config.learning_rate)
     eval_batches, train_dataset = load_nli_dataset(batch_size, debug_run, model_config.max_seq_length)
     eval_batches = distribute_dataset(dist_strategy, eval_batches)
     dist_train_dataset = distribute_dataset(dist_strategy, train_dataset)

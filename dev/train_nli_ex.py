@@ -27,7 +27,7 @@ class RunConfigEx:
     train_step = 0
     eval_every_n_step = 100
     save_every_n_step = 5000
-    learning_rate = 1e-5
+    learning_rate = 2e-5
     model_save_path = "saved_model_ex"
     init_checkpoint = ""
     checkpoint_type = "bert"
@@ -304,13 +304,11 @@ class ExEvaluator:
 
     def do_eval(self, step_idx):
         senli_logging.debug("ExEvaluator:do_eval ENTRY")
-        log_out = open("eval_log{}.txt".format(self.log_idx), "w")
         self.log_idx += 1
         output = []
         for tag, eval_set in self.ex_eval_data:
             data_id_to_ex_scores: Dict[DataID, np.array] = self.get_ex_scores(eval_set.dataset)
             ap_list = []
-            log_out.write("tag: {}".format(tag))
             tag_idx = tags.index(tag)
             for data_id, ex_scores in data_id_to_ex_scores.items():
                 ex_scores_for_tag = ex_scores[tag_idx, :]
@@ -346,7 +344,6 @@ class ExEvaluator:
                     score_str = " ".join(map(two_digit_float, scores))
                     s += "scores: {}\n".format(score_str)
                     cur_sentence_scores_merged = merge_and_sort_scores(cur_sentence_scores)
-                    log_out.write(s)
                     ap = scores_to_ap(eval_set.label_d[data_id][sent_idx],
                                       cur_sentence_scores_merged)
                     ap_for_instance.append(ap)
