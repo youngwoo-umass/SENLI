@@ -1,0 +1,601 @@
+data_id	premise	hypothesis	p_indices	h_indices
+c100	Crosethe Rue de Rivoli to the Palais-Royal, built for Car?di?nal Richelieu as his Paris residence in 1639, and originally named Palais-Cardinal.	Crosethe Rue De Rivoli to the Palais-Royal was built for King Louis XVI.	9,10	10,11,12
+c101	 There was food for all, and houses had been conjured hastily to shelter the people.	There was not enough food for all sadly.	3,4	2,3
+c102	After the second course I began to feel slightly at ease, although I couldn't help being disturbed by the way they just stared at me.	I felt at ease around them.	13,14,15,16	1,2,3
+c103	They made little effort, despite the Jesuit presence in Asia, to convert local inhabitants to Christianity or to expand their territory into the interior.	The Jesuit thought that by converting the Asian people to Christianity, it would help them to expand their territory. 	13,14,15,16,17,18,19,20,21,22,23	3,4,5
+c104	And, could it not result in a decline in Postal Service volumes across--the--board?	Nothing will affect Postal Service volumes across--the--board.	1,2,3,4,7	0,1,2
+c105	If the company makes money on the policy, other insurers are expected to follow.	If the company loses money on the policy then other insurers will copy them. 	3	3
+c106	The tomb of Job Charnock, the Company official who founded the city of Caletta, is in the church cemetery.	The Tomb of Job Charnock is not in the church cemetery.		6
+c107	Because GAO's primary function is to support the Congress in carrying out its decision-making and oversight responsibilities, the number of times our experts testify before congressional panels each year is an indicator of our responsiveness and reflects the impact, importance, and value of our work.	They refused to provide any support to the Congress.	23	1,2
+c108	The two programs are currently housed in buildings about a block apart.	The two buildings are on opposite sides of the city.	8,9,10,11	4,5,6
+c109	The results of the sheepshead minnow, Cyprinodon variegatus, inland silverside, Menidia beryllina, or mysid, Mysidopsis bahia, tests are acceptable if survival in the controls is 80 percent or greater.	Tests are only acceptable when survival rates during controls come to at least 70 percent.	25,26,27,28	11,12,13,14
+c110	Now suppose there is a private delivery firm in Cleveland that is competing with the postal service.	Imagine a state-run delivery firm trying to phase out the postal service.	5	2
+c111	yeah well that's not really immigration	That is the focus of immigration.	3,4	3,4
+c112	My unborn children will never appear on the Today show.	My sons and daughter will be anchors on the Today show.	4,5	5,6
+c113	An organization's activities, core processes, and resources must be aligned to support its mission and help it achieve its goals.	A company's mission can be realized even without the alignment of resources.	8,9	7,8,9
+c114	need the car the next day type deal so	You need the car several weeks later.	3,4,5	4,5,6
+c115	It was still night.	The sun was blazing in the sky, darkness nowhere to be seen.	2,3	3,7,8
+c116	The long-sought, the mysterious, the elusive Jane Finn! 	Jane Finn is easily found but not often looked for.	1	3,4
+c117	It's easy to overdose on the many temples, palaces, and museums in India.	You'll find a scarcity of palaces and temples across India.	3,4,5,6	3
+c118	uh i really i miss college i had a good time	College was horrible and I hated it. 	2,4,7,8,9,10	2,5
+c119	'No one in Large would ever try to harm us.	They're out to get us there in Large, you know.	0,1	0
+c120	True to his word to his faithful mare, Ca'daan left Whitebelly in Fena Dim and borrowed Gray Cloud from his uncle.	Ca'daan kept his word to Gray Cloud and borrowed Whitebelly from his uncle. 	9,10,15,16,17	8,9
+c121	The central features of the Results Act-strategic planning, performance measurement, and public reporting and accountability-can serve as powerful tools to help change the basic culture of government.	The Results Act has strategic planning as a deleted feature. 	1	8
+c122	Today it is possible to buy cheap papyrus printed with gaudy Egyptian scenes in almost every souvenir shop in the country, but some of the most authentic are sold at The Pharaonic Village in Cairo where the papyrus is grown, processed, and hand-painted on site.	The Pharaonic Village in Cairo does not sell papyrus.	3,4,5	5,6,7
+c123	Now it's my turn, and even if I'm walking in a dead man's shoes, I can make my way afresh.	It's your turn.	2	1
+c124	we wouldn't be expected to cast a ballet on the subject	We have been asked to vote on the subject.	1	1
+c125	As recent events illustrate, trust takes years to gain but can be lost in an instant.	Trust, once built, is hard to lose.	12,13,14,15	4,5,6
+c126	But when he was persuaded by divers means to help us, he gave up after one week, declaring it beyond his powers.	He solved the issue within seven days, because he was so smart.	12,13,19,20,21	1,2,3,10,11
+c127	She gave the girl clothes and gifts and took her to her Connecticut estate for weekend pony rides, according to the Star . How was I supposed to compete with that?	She gave the boy clothes, gifts and pony rides. That's hard to compete with.	3	3
+c128	There may be a small savings at the factory showrooms in Manacor, where you'll have the biggest choice.	The factory showrooms are only for vendors.	13,14,15,16,17	4,5,6
+c129	we only have to get up for you know for the daytime feedings	We can sleep all day, since we don't have any daytime feedings.	2,3,4,5	1,2,3,4
+c130	One opportunist who stayed was Octavius Decatur Gass.	Octavius Decatur Gass refers to four people. 	0	5
+c131	These gardens used to belong to the governor's mountain lodge, but the building was demolished by the Japanese during the occupation of Hong Kong.	These gardens belong to the governor's mountain lodge.	2,3	
+c132	He seemed a trifle embarrassed.	He wasn't embarrassed at all.	3,4	1,2,3,4
+c133	and they're more independent and there's things to do then it's good for them to go to different i mean it he goes to a a mother's day out program now once a week both of my kids do	Independence does not grant anymore options for them.	5,6,7,8	1,2,3,4,5
+c134	no North Carolina State	North Carolina is a county	0	
+c135	But Fish is not an upbeat pragmatist.	Fish is an upbeat pragmatist. 	3	
+c136	so i really i really don't have heart burn at all with doing it myself over four nights tie i tied the car up if four days but we're fortunate we didn't need it	I tied the car up for four nights but I had heartburn the entire time.	5,6,7,8,9,10	10,11,12,13,14
+c137	In general, six elements appear  purpose, type of data collected, method of data collection, design, method of data analysis, and reporting.	Purpose is not one of the six elements listed here.		1,2
+c138	oh yeah IBM uh i mean uh a lot of people use human factors folks but IBM is what i'm looking at right now	No one thinks about human factors and I'm not interested in IBM.	7,8,9,10,11,12,13,20	0,1,2,3,4,8,9
+c139	Cybernetics had always been Derry's passion.	Derry knew nothing of cybernetics.	5	1,2,3
+c140	To the northwest of the chateau, the Grand Trianon palace, surrounded by pleasantly unpompous gardens, was the home of Louis XIV's mistress, Madame de Maintenon, where the aging king increasingly took refuge.	Grand Trianon palace was the residence of Louis XIV.	19,20,21	7,8
+c141	You're crazed, Beresford.	You are a sane genius, Beresford.	1	1
+c142	so are can i just ask you are you Canadian	Are you from the U.S.?	9	4
+c143	In the meantime, the philosophy is to seize present-day opportunities in the thriving economy.	The philosophy was to seize opportunities when the economy is doing poorly.	12	11
+c144	hi Cynthia what did you wear to work today	You did not go to work today. 		2
+c145	The purpose of the Diwan-i-Khas is hotly disputed; it is not necessarily the hall of private audience that its name implies.	The name suggest that it is open to the public.	15	6
+c146	4 million homes watch the evening news on CBS, ABC, and NBC.	No one watches nbc.	0,1	0,1
+c147	Palestrina , by Hans Pfitzner, performed by the Royal Opera (Metropolitan Opera House, New York).	Hans Pfitzner did not write Palestrina, which will be performed in New York. 	2	2,3,4
+c148	Behind the cathedral, croseover the Rue de la R??publique to the 15th-century Eglise Saint-Maclou, the richest example of Flam?boy?ant Gothic in the country.	The Eglise Saint-Michel was built in the 8th century.	9,10,11	5,6,7,8
+c149	Many had to leave their birthplaces, fleeing to Lesvos, Chios, and Samos, the Greek-ruled islands just offshore.	Everyone was able to remain in their homeland. 	3	4
+c150	Montmartre is lively at night, with famous clubs such as Au Lapin Agile.	Montmartre has no life at night.	2	2,3
+c151	and these poor guys out there uh trying to uphold the law um i don't know i kind of think they should bring back capital punishment	I think that capital punishment should remain illegal.	9,10,11	7
+c152	When asked about the Bible's literal account of creation, as opposed to the attractive concept of divine creation, every major Republican presidential candidate--even Bauer--has squirmed, ducked, and tried to steer the discussion back to faith, morals, and the general idea that humans were created in the image of God.	Every republican presidential candidate answered the question of creation openly.	19,23,24,25,26,27,28,29,30,31	4,5,6,7,8,9
+c153	'I see.'	I was blind.	1	2
+c154	and you know if i know that they're gonna be there you know you you i try to really watch it and like you say you know really dress up and if i know they're not you know i i've been doing a lot of reorganization you know the last couple of months the same way you are you know and it's just so it's just impossible to crawl down on the floor and dig through boxes in a dress you know it is so	I never try to watch it.		1
+c155	I don't know all the answers, fella.	I know everything there is to know about it.	1	
+c156	you know even even into major things just to keep our car longer because i don't think we get the money that we put into them out of them in two years or three years and of course i was never in a position where i could trade my car off every two years	I get a brand new car every couple of years.	40,46,47,48	1,2,3,4
+c157	At the top of the hill is the imposing medieval fortress of Kadifekale.	The church Kadifekale is located at the bottom of the hill.	2	7
+c158	yeah exactly right it really is because they're gonna get them one way or another they will always have a way look at drugs they always have a way to get that so	They will never get drugs, because the government passed a bill that prohobits all of them.	17	2
+c159	ooh it's kind of tough to think of some of the others although i do watch some of some of those frivolous things uh like on Thursday nights at nine o'clock when i get home from aerobics i will watch uh Knots Landing	I've never been to an aerobics class before.	13,14,15	1,2,3
+c160	right yeah that's it's always handy to have that that credit card for whatever it is that you might need it for	It is not necessary to have a credit card.	19	2,3
+c161	If you need to use the mail, it would be helpful if you sent your comments both in writing and on diskette (in Word or ASCII format).	We don't need more than one copy of your comments, either a diskette or writing will do.	16	10
+c162	Were you in company with anyone?	Were you awake?	2,3	2
+c163	A student visa overstayer is not going to be a high priority for pro bono assistance.	A student visa overstayer will be high priority.	5	
+c164	She buried his remains to spare her mother the gruesome sight.	She quickly ate his remains to steal all the nutrients for herself.	5	6
+c165	"This is one of the reasons we're growing too weak to fight the Satheri.  ""What's wrong with a ceremony of worship, if you must worship your eggshell?"" Dave asked."	We shouldn't worship our eggshells, why do we even have ceremonies at all? asked Dave.	23	1
+c166	Yes, you've done very well, young man.	No, you have not done very well.		3
+c167	How do you propose to get in touch with your would-be employers?	How will you destroy your potential employers' gardens?	5,6,7	3
+c168	You're the Desert Ghost.	You're a living desert camel.	3	4
+c169	NONFEDERAL PHYSICAL PROPERTY ANNUAL STEWARDSHIP INFORMATION For the Fiscal Year Ended September	The report details federal physical property	0	5
+c170	Favored by the Ancient Egyptians as a source of turquoise, the Sinai was, until recently, famed for only one event but certainly an important one.	The Ancient Egyptians found nothing of use in the Sinai.  	12,13,14,15	3,4,5,6
+c171	You name it L.A.'s got it.	L.A. doesn't offer much of anything.	4,5	1,2,3,4,5
+c172	This points to a final press-friendly quality of McCain' brilliant flattery.	This does not lead to a final press-friendly quality of McCain' brilliant flattery.	1,2	1,2,3,4
+c173	On the left of the entrance ramp is the open space once occupied by the Temple of Athena, close to which are the remains of the Pergamene library.	There are no remains visible from the ramp.	23,24,25,26,27	2,3,4
+c174	But he said he thought the Ledfords understood they could qualify only if he put down a stated income, typically an undocumented business income that raises the borrower's interest rate. 	He thought he didn't need anything to qualify.	11,12,13,14,15,16,17,18,19,20,21,22,23	3,4,5
+c175	is there still that type of music available	I could care less if the music still existed.	0,1,2,3	2,3,4
+c176	The almost midtown Massabielle quarter (faubourg de Massabielle), is sometimes described as the most picturesque in the city.	The most picturesque part of the city is in the south.	2,3,4	8,9,10
+c177	Don't take it to heart, lad, he said kindly.	You should buy into what was said.	0,1,2,4	2,3
+c178	Jon's feeling of age and weariness must have shown.	Jon was feeling young and spry.	3,4,5	3,4,5
+c179	Several pro-life Dems are mounting serious campaigns at the state level, often against pro-choice Republicans.	Silly campaigns are being invented by dumb democrats.	5,6	0,1,6
+c180	are you and since being Argentinean we also have a lot of pasta	We're Argentinean so we hate to eat any pasta or Italian food.	8	4
+c181	The technology used to capture and evaluate information in response to the RFP permits LSC to compile and assess key information about the delivery system at the program, state, regional, and national level.	There is no way for the LSC to compile information about delivery systems.		2,3
+c182	Through a friend who knows the lift boy here.	Through my friend has not yet met the lift boy here.	3,4	4,5,6
+c183	If the face has been getting longer at the bottom over the generations, it has been getting shorter (and broader) on top.	The shape of the face doesn't change at all over the span of generations.	3,4,5,6	1,2,5,6
+c184	The Vice President and his representatives have asserted that GAO lacks the statutory authority to examine the activities of the NEPDG, recognizing only GAOas authority to audit its financial transactions.	The Vice President has sacked a few representatives. 	4,5	3,4,5,6,7
+c185	okay i'll keep that in mind yeah you serve that yourself or the for a family	I think I will forget about that. You will need to remind me.	1,2,3,4,5	2,3,4,5,6
+c186	ENVIRONMENTAL PROTECTION AGENCY	Agency which is responsible for the destruction of the environment.	1	6
+c187	because the cold weather was just simply trapped along the ground and couldn't get away	The weather got away easily.	12,13,14	2,3,4
+c188	China could never trump the warhead blizzard Washington would send in retaliation against any atomic attack, though the country would be loath to cede to U.S. missile defenses the deterrence afforded by its handfuls of warheads.	China had many more nuclear warhead than the US.	2,3,4,5,6	2,3,4,5
+c189	With him was the evil-looking Number 14.	Number 14 looked very innocent.	4	3,4
+c190	Though he abstains from showbizzy campaigning, he markets his virtue and exploits his legend.	He is not capable to market his virtue, exploiting his legend.	6,7	0,1,2,3,4,5
+c191	than the passage of time, the rate of inflation, or geographic location, as so often is the case today.	This is never the case today.	14,15,16,17	1,2
+c192	It also describes the results of the scenario analysis, both in terms of the various marginal costs associated with emission control strategies and the economy-wide impact of each scenario.	It includes no description of what impacts or price will be exacted by emission control strategies.	2	2,3
+c193	yeah well my uh my uh probably one of the biggest decisions i think that was very strengthened for our family was rather than have one child make that decision	The decision made no effect on our family.	7,8,9,10,11	3,4
+c194	Poirot remained lost in thought for a few minutes. 	Poirot didn't think.	1,2,3,4	1,2
+c195	His arm came up over his eyes, cutting off the glare.	Everything was dark, and he couldn't see a thing.	10	4,5,6
+c196	A piece describes the Learning Channel's new women-targeted reality TV  A Wedding Story , A Baby Story , and A Dating Story , featuring real-life marriages, babies, and dates.	The LEarning Channel focuses on the male audience.	7	6,7
+c197	i never managed to plan my departure right	I have all of my travel plans set.	1,2,3,4,5,6	1,2,5,6,7
+c198	oh wow no i just started about well five years ago i think	It started last year.	5,8,9,10	1,2,3
+c199	The  liberation  of these old European colonies created the basis for postwar independence movements proclaiming the Japanese slogan  Asia for the Asians.  	The Japanese slogan is Asia for the Japanese.	21	7
+c200	As long as Assad lives, he can manage these troubles and keep an agreement with Israel.	The only way for Assad to take care of the trouble is for him to die. 	4	11,12,13,14,15
+c201	(For more information on BLM's senior executive performance plans, see app.	BLM's performance plans are secret.	7,8,9,10	1,2,3,4
+c202	 He found himself thinking in circles of worry and pulled himself back to his problem.	He got lost in circles of worry, and could not face his problem anymore.	9,10,11	8,9,10
+c203	What changed?	Nothing changed.	0,1	0,1
+c204	The chain swung again, hitting her arm and sending the palm knife into the crowd.	The woman was unarmed.	10,11	3
+c205	Boca da Corrida Encumeada (moderate; 5 hours): views of Curral das Freiras and the valley of Ribeiro do Poco.	This chapter is in the advance category.	4	5
+c206	As the double-decker boats get ready to leave the pier, bells ring, the gangplank is raised, deckhands in blue sailor suits man the hawsers, and a couple of hundred commuters begin a seven-minute sightseeing tour.	The double decker boats are all out of service, so they never leave the pier.	4,5,6,7	11,12
+c207	Auditors are strongly encouraged to comply with the guidance provided by GAGAS.	Auditors should completely ignore any guidance offered by GAGAS.	2,3,4,5	2,3
+c208	Miller claimed the First Amendment (right to freedom of speech and association) rather than taking the Fifth (right against self-incrimination).	The man cited the Fourth Amendment.	1,2,3,4	2,3,4,5
+c209	"Just like we have hairpins and powder-puffs."" Tommy handed over a rather shabby green notebook, and Tuppence began writing busily."	Tommy handed Tuppence a red notebook.	13	4,5
+c210	and the NIT semifinals are on tonight	The NIT semifinals are held early in the morning on September 1.	5,6	4,5,7,8
+c211	Pro-Microsoft analysts spin this as a heroic sacrifice, removing the lightning rod whose seemingly disingenuous testimony has ostensibly driven the DOJ to the verge of demanding the company's breakup.	Pro-Apple analysts say that was a sacrifice for the company.	8,9,13,14,23,24,25,27,28	6
+c212	Beatrice and Grace made out OK legally, but some of us will never use their products again without thinking about Travolta losing his shirt in the name of those wasted-away little kids.	Beatrice and Grace ended up in prison at the end.	3,4,5,6	3,4,5,6
+c213	The  rock  has a soft texture and can be bought in a variety of shapes.	The rock is harder than most types of rock.	4,5	3,4,5,6
+c214	They crossed the Forth from Dunfermline at the narrows known to this day as Queensferry.	The narrows were renamed from Queensferry to Kingsferry.	9,10,11,12	3
+c215	"17 ""Surely you are not thinking of refusing? "	You should pass up the opportunity.	4,5,7	1,2,3,5
+c216	The Saving Mystery, or Where Did the Money Go?	There is no mystery about spending.	1,2,4,5,7,8	2,3,4,5
+c217	At the eastern end of Back Lane and turning right, Nicholas Street becomes Patrick Street, and in St. Patrick's Close is St. Patrick's Cathedral .	Nicholas Street becomes Patrick Street after turning left at the eastern end of Back Lane.	8,9	6,7
+c218	Not quite as large is the Papal Crose commemorating Pope John Paul II's visit in 1979, when more than one million people gathered to celebrate mass.	Less than a million people celebrated mass during Pope John Paul II's visit in 1979.	17,18,19,20,21	0,1,3,4
+c219	GAO's Web site (www.gao.gov) contains abstracts and full-text files ofcurrent reports and testimony and an expanding archive of older products.	The GAO has received many complaints due to lack of a website. 	0,1,2,3	1,2,8,11
+c220	What you say about Lawrence is a great surprise to me, I said. 	I knew that about Lawrence all along.	8,9,10	1
+c221	6See also Internal Control Management and Evaluation Tool (GAO-01-1008G, August 2001).	The tool is not for Internal Control Management.	2,3,4	3,4,5,6,7
+c222	This popular show spawned the aquatic show at the Bellagio.	This popular show is unrelated to the origins of Bellogio's water display.	3,5,6,9	4,5,7,9,10,11
+c223	Savonarola burned in Florence	Florence became Savonarola's new home.	0,1,2,3	1,2,3,4
+c224	We need your help with another new feature that starts next week.	We are able to work with the new feature on our own.	0,1,2,3	2,4,9,10,11
+c225	it gets it	It doesn't get it.	1,2	1,2,3
+c226	Many are based on industry-recognized models such as the Constructive Cost Model (COCOMO), PRICE, Putnam, and Jensen.	None of the models are based on the industry-recognised ones.	2,3,4,5	0,4,5,6,8,9
+c227	This northern beach of magnificent tan sand is most agreeably reached by boat.	The beach is rocky and terrible.	4,5,6	3,4,5
+c228	Prior to 1986, the United States had been a net creditor because its holdings of foreign assets exceeded foreign holdings of U.S. assets.	The US wasn't a net creditor until after 1986.	0,1,2,4,5,9,10	1,2,4,5,6,7,8
+c229	Specifically, suppose unconstrained competition were allowed but the Postal Service turned out to have sufficient market power in some product areas to allow other products to be priced at or near the level of incremental cost.	The Postal Service does not have a lot of market power.	13,14,15,16	3,4,5,6,7,8,9,10
+c230	Since the system would automatically verify all receipts and acceptances prior to invoice payment authorization, there would be no need to authorize payment prior to verification of receipt.	The new system has nothing to do with invoice payments.	6,12,13,14	4,5,6,7,8,9
+c231	However, the specific approaches to executing those principles tended to differ among the various sectors.	Specific approaches to each principle is the same in each sector.	10	7
+c232	What seems to be a special bargain price for just  one week only  could turn out to be a year-round con.	Store owners are always honest.	19,20	3,4
+c233	well that's pretty typical though uh i don't uh i don't guess it's going to be any much different uh than than it has been in the past so i expect uh July and August we'll see our  or uh share of hundred degree days	We don't ever see the temperature get into the hundreds.	35,36	1,2,3
+c234	She would be almost certainly sent to you under an assumed one.	The man told the other man that Bill would be sent to him.	0	7
+c235	News argues that most of America's 93 million volunteers aren't doing much good.	News argues that all of America's volunteers are doing a lot of good.	9	3,9,10
+c236	Some travelers add Molokai and Lanai to their itineraries.	No one decides to go to Molokai and Lanai.	0,1	0,1
+c237	In the depths of the Cold War, many Americans suspected Communists had infiltrated Washington and were about to subvert our democracy.	Communists assisted America's government during the Cold War.	18	1
+c238	yeah yeah i think well i know it's true you see a lot of that you know rally behind the female she may lose but by golly we're going to make a statement here	It wouldn't count for anything if we rallied behind a female candidate.	27,28,29,30,31,32	1,2,3,4
+c239	For such a governmentwide review, an entrance conference is generally held with applicable central agencies, such as the Office of Management and Budget (OMB) or the Office of Personnel Management.	An entrance conference is held with specialized agencies.	12,13,14	6,7
+c240	Vatican II gave rise to a less hierarchical and more outward-looking Catholicism and set the stage for once-unthinkable innovations like plainclothes nuns and the celebration of the Mass in English and other modern languages.	Vatican II led to a greater centralization of power within the Catholic church.	6,7	5,6,7,8
+c241	Load time is divided into elemental and coverage related load time.	Load time is comprised of three parts.	3	5,6
+c242	To the sociologists' speculations, add mine.	I don't agree with sociologists.	4,5	0,1,2
+c243	5) The Democrats are reaping what they sowed (after torturing Robert Bork, John Tower, and Clarence Thomas).	Democrats rarely have any political relevance.	4,5,6,7	1,2,3,4,5
+c244	Lincoln glared.	The man winked.	0,1	1,2
+c245	"You claimed to be a repairman for such devices.""  Hanson bent to study it again, using a diamond lens one of the warlocks handed him."	Hanson took it and threw it aside, knowing it was useless.	5,6,7,8	4,5,6
+c246	The Government does not sacrifice anything of value in exchange and the entity that forfeits the property does not receive anything of value.	The entity will receive appropriate compensation for forfeited property.	3,4,5,18,19,20	3,4,5
+c247	She's smiling but her eyes are closed.	Her eyes widened as she smiled.	4,5,6	2
+c248	There is very little left of old Ocho  the scant remains of Ocho Rios Fort are probably the oldest and now lie in an industrial area, almost forgotten as the tide of progress has swept over the town.	There is nothing left of the Ocho Rios Fort.	2,3,4	2,3
+c249	Enlarging the village was not desirable and most knew that Severn only desired wealth and a seat on the council of elders.	Severn was happy being poor.	12,13	2,3,4
+c250	Ickes apparently made calls to donors from his government office, but there is no evidence so far that anyone else solicited funds in a federal building.	There is evidence that many people solicited funds from a federal building.	11,12,13,14	0,1,2
+c251	(Read Slate 's  on how Bush flaunts the courage of his cliches.	Slate talks about how Bush is ashamed of his cliches.	5,6	5,6,7
+c252	3 Accordingly, auditors performing financial audits need to be proficient in applying the AICPA standards and guidance contained in the SASs.	Auditors do not need to be proficient in AICPA standards 	2,6,7,8,9	0,1,2,3,4,5,6
+c253	Even the most aged and infirm travel here to die, for nothing is more blessed for a devout Hindu than to die in the great waters of the Varanasi and thus be released from the eternal cycle of rebirth.	There is nothing special to Hindus about the water of the Varanasi.	11,12,13,14	2,3
+c254	Treat yourself and bill it to Si.	Don't treat yourself, Si has to pay for that. 	0,1	0,1,2
+c255	(A bigger contribution may or may not mean, I really, really support Candidate X.) Freedom of association is an even bigger stretch--one that Justice Thomas would laugh out of court if some liberal proposed it.	A bigger contribution means to support candidate Y.	13	7
+c256	no no not at all it	All of them	2	
+c257	The red moon made her skin glow.	Her skin was falling off because of the red moon.	6	3,4
+c258	I just stopped where I was.	I continued on my way	2	1
+c259	but there's no uh inscriptions or or dates or anything else	The date is right there, it says May 9th.	2,7	
+c260	um-hum you mean when the reporter sticks the the microphone in the person says the face and says how do you feel that you house has burned to the ground	Like when the reporter doorsteps a person on their way out the door.	4,9,26,27,28,29	4,5,6,7,8,9,10,11,12
+c261	The H-2A worker must depart the country and is subject to deportation for failing to do so.	The H-2A worker is being forced to enter the country for work.	3,4	5,6,7
+c262	cook and then the next time it would be my turn and i'd try to outdo him and then he'd try to outdo me and  we we was really a lot of fun and	I would cook and he never would, it always turned out to be a chore. 	19,20,32	4,5,6,14
+c263	because i don't want to my mother was also a domineering type of personality because she had to take over the things that my dad fell short in	My mother made me take over the things that my dad fell short it.	15,18,19	2,3,4,5
+c264	'  Blankley replies, And there are fund-raisers going out in other parts of the country to raise  'The conservatives are coming, the conservatives are coming.	"Blankley replies, there are no fundraisers in other parts of the country to raise ""the conservatives are coming""."	4,5	2,3,4,5
+c265	Tax records show Waters earned around $65,000 in 2000.	Waters' tax records show he earned a blue ribbon last year.	5,6	6,7,8
+c266	'I don't suppose you could forget I ever said that?'	I hope that you can remember that forever. 	5	5
+c267	This was the saturation and 125-piece walk sequence Enhanced Carrier Route mail volume in 1996.	The Enhanced Carrier Route was canceled in 1995.	14	5,7
+c268	much with whatever it's with the Black the Black problem or whatever that may be now	There is no Black problem at all.	9	2,4
+c269	Look here, you've no business to come asking for me in this way.	You have every right to be asking for me this way.	3,4	2,3
+c270	um-hum what is your worst then	What is your best? 	3,4,5	2,3
+c271	Excellent reviews for the collaboration between two of the '90s' most acclaimed jazz saxophonists.	Critics compared the music to deranged caterwauling cats.	10,11,12	5,6,7
+c272	For himself he chose Atat??rk, or Father of the Turks.	For himself he chose Piety.	6,7,8,9	2,3,4
+c273	Acquaintances of mine have become Orthodox because of the codes.	My acquaintances shied away from becoming Orthodox because of the codes.	6,7,8,9	7,8,9,10
+c274	yeah those yeah it was all bloodless and the good guys can get hit all day long and they have to shake it off they don't they don't you know get  epileptic fits or anything from getting hit on the head	That was the goriest most true to life thing I've ever seen and I think that's gonna psychologically affect me for a long time.	34,35,36	18,19
+c275	Favored by the Ancient Egyptians as a source of turquoise, the Sinai was, until recently, famed for only one event but certainly an important one.	The Sinai was a source of gold for the Ancient Egyptians.  	9	6
+c276	I'm sure he'll be back to work soon enough- it's only a leg wound, barely broken flesh.	My legs will never heal.	10,13	3,4
+c277	Look for these items in the picturesque open-air market of Sa Penya (Ibiza Town) or for a wider selection at the bustling, covered central market in the newer part of town (carrer d'Extremadura).	You can't find anything at the open-air market.	17,18	0,1,2,3
+c278	The library is the largest of any plantation in Jamaica, with over 300 volumes, including three first editions; the books would have been used to while away the long humid days.	The library is the smallest estate in Jamaica, with only three books. 	4	4
+c279	Jon walked back to the town to the smithy.	Jon continued on into the mountains.	1,2	5
+c280	Such multicolored reef dwellers as the parrotfish and French angelfish, along with weirdly shaped coral, crawfish, or turtles hiding in crevices, can be yours for the viewing in these clear waters where visibility of 30 m (100 ft) is common.	Since the reef has been bleached and rendered lifeless by global warming, it's no longer possible to see sea life in the cloudy water.	1,26,29,30,32,33,34,35	4,5,6,7,13,14,15,16,17,22,23
+c281	all right thanks bye bye	hello stop upsetting me	0,1,2	1,2
+c282	Piccadilly Tube station.	Piccadilly Circus station. 	1	1
+c283	Many who fled have returned.	They all ran and never looked back.	3,4	4,5,6
+c284	but uh TV is something that we try to not um deliberately try not to get hung up on it like you say	We are very obsessed with watching TV programs.	11,12,13,14,15,16,17	2,3
+c285	it may be arrogant but i mean let them come to us	It is definitely not arrogant to have them coming to us	1,2	2,3
+c286	"They wanted you, so they got you.""  Dave considered it."	They never wanted you, but they ended up getting you anyways.	0,1,2	0,1,2,6,7,8
+c287	he's not a starter	He is the one they always have starting.	1,2	5,6
+c288	Similarly, OIM revised the electronic Grant Renewal Application to accommodate new information sought by LSC and to ensure greater ease for users.	The OIM is hoping to revise the Grant Renewal Application to reduce the LSC's ability to request information.	2,8,9	3,4,10,11
+c289	That couldn't happen in a sane world, either.	That could definitely happen in a sane world.	1,2	1,3
+c290	It was worth the trip for that.	It wasn't worth anything.	2	1,2
+c291	You and your friends are not welcome here, said Severn.	Severn said the people were always welcome there.	5,6	6
+c292	It was the heyday of the brilliant but lethal Spanish-Italian  lecherous Rodrigo, who became Pope Alexander VI, and treacherous son Cesare, who stopped at nothing to control and expand the papal lands.	Rodrigo never became pope and was childless.	12,13,14	1,2,3
+c293	There is very little to see here, or at the ruined Essene monastery of Qumran itself.	There are plenty of interesting sights and experiences here.	3,4,5	4,5
+c294	those little kids don't understand it	The little kid understand it perfectly. 	3,4	3
+c295	The main attraction of Kom Ombo is the vibrant color still found on the columns in the Hypostyle Hall.	With it's drab and plain columns, the Hypostyle hall at Kom Ombo is basically ignored by visitors.	8,9	2,3,4
+c296	The best place to view the spring azaleas is at the Azalea Festival in the last week of April at Tokyo's Nezu shrine.	There are no festivals held in the month of April in Tokyo.  	11,12	2,3,5,9,10,11
+c297	Very few emperors were reluctant to submit to Fujiwara domination.	Every emperor thought to be reluctant towards Fujiwara.	1,2	0,1
+c298	The only comprehensible explanation is that the vocation that had burrowed in next to medicine had taken control, had insisted.	The only explanation is that nothing has taken control of medicine. 	6,7	5,6,7,8
+c299	Just north of the Shalom Tower is the Yemenite Quarter, its main attractions being the bustling Carmel market and good Oriental restaurants.	The Shalom Tower is north of the Yemenite Quarter.	1,2,4,5,6,8	1,2,3,4,5,7,8
+c300	guess it didn't last too long at the box office but i thought it was pretty good	Wow, it lasted in the box office for so long, I'm surprised.	2,3,4,5	2,8,9
+c301	Also, disappointing earnings reports from Intel and other blue-chip companies in the two weeks leading up to the crash caused investors to question the value of entire portfolios.	Intel has never had a disappointing earning report.	1	2,5
+c302	I was deeply impressed by the power and eloquence of the counsel for the defence.	The counsel for his defence did not impress me in any way.	2,3	5,6,7
+c303	All of a sudden I sat down on the edge of the table, and put my face in my hands, sobbing out a 'Mon Dieu! 	I sat down on the table and started laughing out loudly.	20	8
+c304	how do you like it well	You probably hate it, don't you?	3,5	2
+c305	'Don't worry,' he whispered.	He was freaked out.	0,1	1,2,3
+c306	The standard technology assumptions of scenario A were used by EIA in the development of the AEO2001 reference case projections.	EIA used the standard technology assumptions to eliminate the AEO2001 reference case projections.	11,12,13,14	6,7
+c307	Evaluating the intent of the six principles, we observed that they naturally fell into three distinct sets, which we refer to as critical success factors.	The six principles fell into two distinct sets.	14,15	5,6
+c308	Participants generally viewed the new internal control reporting requirements of the Sarbanes-Oxley Act of 2002 as a good requirement.	The Sarbanes-Oxley Act of 2002 focused mainly on SEC filings, and ignored internal controls and reporting completely.	17,18	11,12,13,16
+c309	At the fulcrum is a coffee bar and cafe under a giant screen television flanked by CD listening stations.	There are no audio facilities near the coffee bar and cafe.	16,17,18	2,3,4
+c310	and not only is it you know trouble to have to drive but it takes time away from your home and your family when you're out driving	Driving is a fast experience with no downfalls.	7,14,15	3,4,6,7
+c311	Text Box 2.1: Gross Domestic Product and Gross National Product 48Text Box 4.1: How do the NIPA and federal unified budget concepts of	Text about GBP and USD.	4,8	2,4
+c312	He and his associates weren't operating at the level of metaphor.	His associates' boss was operating at the level of the metaphor. 	4	3
+c313	The tip was hooked towards the edge, the same way the tips are hammered for knives used for slaughter.	They were fragile and could not leave a scratch. 	15,16,17,18	2,4,5,6,7,8
+c314	Although it's hard to disagree with James Surowiecki's roasting of Wade Cook in The Book on Cook, Surowiecki's assertion that the equity stock option market is simply a big casino that contribute[s] nothing to the smooth functioning of capital markets is both wrong and silly.	Wade Cook wrote The Book on Cook.	6,7,8,9,10,11	0,1,2
+c315	well yeah that really is scary	It doesn't scare me.	4,5	1,2
+c316	But of course the DSM is informed by social values.	Social values were not taken into consideration during the DSM's creation.	5,6,7	3,4,5,6
+c317	36 AC usage nationally for mercury control from power plants should be roughly proportional to the total MWe of coal-fired facilities that are equipped with the technology (this assumes an average capacity factor of 85 percent and other assumptions of Tables 4-4 and 4-5).	Mercury control from power plants does not required AC.	1,2	6,7,8
+c318	It was deserved.	it was not deserved at all	0	2
+c319	Two bronze lions, carrying out feng shui principles, guard its doors.	Two golden calfs, carrying out capitalist principles, laugh at customers.	2,5,6,8,9,10	2,5,7,8,9
+c320	I have a situation.	Everything is fine and I have nothing on my mind.	1,2,3	6,7,8,9
+c321	oh like if they say i i we just type it in like that	Change it before typing it in.	8,9,12,13	0,1,2
+c322	Each individual's survival curve, or the probability of surviving beyond a given age, should shift as a result of an environmental quality improvement.	Environmental quality has no impact on the life expectancy of people who are already old.	13,14	3,4
+c323	The number of steps built down into the interior means that it is unsuitable for the infirm or those with heart problems.	The interior is well suited for those with cardiac issues.	13	3,4
+c324	it's the very same type of paint and everything	The paint is completely different to the brand I had originally picked.	3,4	3,4
+c325	His off-the-cuff style seems amateurish next to Inglis' polished mini-essays.	He didn't look like an amateur 	3,4	1,2,3,4,5
+c326	in each square	On the square outline.	0	0,3
+c327	If she wasn't, how would they have known Jane Finn had got the papers?	How would they know that Jane Finn had lost the papers?	11	8
+c328	In Japan, Mainichi Shimbun criticized the new Liberal Democratic Party leader Keizo Obuchi for being devoid of fresh ideas for reviving the Japanese economy.	Mainichi Shimbun approved of Keizo Obuchi's efforts toward improving the economy.	4	2
+c329	However, SCR installations designed to comply with the NOX SIP Call are generally already into the installation process or, at a minimum, into the engineering phase of the project.	SCR installs don't have NOX SIP to comply with.	3,4,5,8,9	2,3,6,7
+c330	Well, we've just got to get down to it, that's all.	We should take a break from this.	5,6,7,8	2,3,4
+c331	, number of parks or acres of land) rather than in terms of historical cost.	Land owned by parks does not have a value.	13,14	5,6,8
+c332	As for the divisive issue of whether the Mass is a sacrifice for the remission of sins, the statement affirms that Christ's death upon the cross ...	The statement does not say anything about Christ's death on the cross.	19	3,4,5
+c333	it's neat when you think about how she wrote it and stuff otherwise the lyrics are kind of	The way she wrote it isn't interesting at all. 	1	5,6
+c334	Since 1998, LSC has initiated and overseen significant structural changes in the number and configuration of LSC-funded programs in order to develop more powerful and effective state delivery systems.	LSC does not follow a state model, and focuses on federal delivery systems.	26	1,2,3,5,6,8,9,10
+c335	yeah i have too and i found it real interesting but	I have also, and I found it boring. 	9	7
+c336	With the gap still of landslide proportions in most polls, Dole has been written off, correctly or otherwise, by the pundits.	The pundits could not get enough of them.	13,14	2,3,4,5
+c337	Most recently, GAO reviewed activities of the White House China Trade Relations Working Group, which was established at the request of President Clinton in the exercise of his Constitutional powers.	President Clinton wasn't exercising his Constitutional powers when he made the request.	25,26	2,3
+c338	One or two, replied Tommy modestly, and plunged into his recital.	Tommy stopped playing.	7,8	1,2
+c339	When the two nations divided it up, France got 54 sq km (21 sq miles) and Holland agreed to take just 41 sq km (16 sq miles), but that included the important salt pond near the Dutch capital of Philipsburg.	The French ended up with control over the salt pound.	16,19,21,22,23,29,32,33	1,5,6,8,9
+c340	But for some recipients, there is a downside to the checks from Anthem Inc., issued to policyholders as part of the insurer's conversion to a publicly traded company.	There is only an upside to anthem's check 	7	4
+c341	i don't even know how they figure it really i'm glad i don't work in a store	I'm really happy that I work in a store.	12,13	5
+c342	and uh as a matter of fact he's a draft dodger	He's never shirked from the draft, even when it was most dire.	9,10	1,2,3,5
+c343	The islands' names refer to the different force winds hitting them, not their topography.	The name of the islands are based on their topography.	11,12,13	6,7,9
+c344	"They look just as good as new."" They cut them carefully and ripped away the oilskin."	They look really old even though they're new.	6	3
+c345	For a second, I thought the crowd might provide me with some cover, or at least slow my pursuers down with its sheer density.	i had no where to hide.	4,6,8,12,16,18	2,3,4,5
+c346	At the western end of Cowgate (where it meets Holyrood Road), you will see one of the few remaining sections of Edinburgh's old city wall (Flodden Wall), built following the Lang Siege of the 1570s.	Flodden Wall was built in the late 18th century.	27,34	3,6,7,8
+c347	Complacency came easily after a couple of weeks without capture.	We stayed vigilant.	0,1,2	1,2
+c348	As with other types of internal controls, this is a cycle of activity, not an exercise with a defined beginning and end.	There is a clear ending to this exercise, and it's fast approaching.	13,16,19,20,21	3,4
+c349	I feel that you probably underestimate the danger, and therefore warn you again that I can promise you no protection.	I feel that you do not underestimate the danger, and therefore I do not need to warn you.	4,5,16,18,19	4,5,6,13,14,16
+c350	Once the pious devotions are over, however, wine flows, fireworks explode, espetada (kebab) stalls flourish, and Monte regains normality for another 363 days.	Monte is a location devoted solely to pious devotion.	0,2,3,4,5,7,8,9,10,11,12,13,14	4,5,6,7,8
+c351	One of the city's attractions is the shopping center around the Place Darcy and Rue de la Libert??, where you can hunt for such regional delicacies as the famous mustards; pain d'??pices (gingerbread); and cassis, the blackcurrant liqueur that turns an ordinary white wine into a deliciously refreshing kir.	There is nowhere to shop in the city.	7,8	2,3,4
+c352	If necessary to meeting the restrictions imposed in the preceding sentence, the Administrator shall reduce, pro rata, the basic Phase II allowance allocations for each unit subject to the requirements of section 414.	Section 414 helps higher allowance allocations for each unit.	13,14,21,22	2,3,4,5
+c353	The next year, he was expelled from Rand as a security risk after local police caught him engaging in a lewd act in a public men's room near Muscle Beach.	They kept him at Rand even though he was arrested	5	1
+c354	Always Sacrilegious, Always Coca-Cola.)	Always respectful of Jesus.	1	1,2,3
+c355	Maybe in that sense, the behavior of the Pippens and Iversons of the world is defensible.	Pippens and Iverson are penguins.	0	0
+c356	Based on field observations and some discussions with U.S.	It had no basis, just pure speculation. 	0,1,3	2,3
+c357	that's their signal	That isn't their signal. 	0	1
+c358	See you Aug. 12, or soon thereafter, we hope.	The person told not to come until December.	2	7
+c359	"On my honour, I will hang him as high as Haman!"""	I will not hang him.	0	2
+c360	Friendly Fire , by Joe Lovano and Greg Osby (Blue Note Records).	Joe Lovano didn't contribute anything to Friendly Fire. 	3	2,3
+c361	Land of Lincoln helped Tasha Johnson of Marion get Social Security benefits to support her four children after the 29-year-old woman was diagnosed with non-Hodgkin's lymphoma, a type of cancer, she said.	She was cancer free at 29 years of age.	19,22,29	2,3
+c362	From the corner of his eye he saw Jamus look over the broken mare.	Jamus was blinded by the sandstorm.	6,7	1,2
+c363	We need to look at the implications that these differing roles have for a range of issues, such as SES core competencies, performance standards, recruitment sources, mobility, and training and development programs.	We can completely ignore the implications of the roles on mobility.	1,2,3,4	1,3
+c364	TIG funds support the Technology Evaluation Project, an initiative of the Legal Aid Society of Cincinnati.	The Technology Evolution project is located in Florida.	15	7
+c365	The 28 sta?tues representing the kings of Judah and Israel have been remodeled after the drawings of Viollet-le-Duc; the original ones were pulled down during the Revolution, since they were thought to be the kings of France.	The 28 statues were erected during the French Revolution.	22,23	4
+c366	"No, John, I said, ""it isn't one of us. "	It is one of us, I told John.	5	1
+c367	uh we've gotten a little Atari computer uh husband describes it as a a computer with training wheels	We do not own an Atari and never have. 	2	1,2,3
+c368	2. Receiving Water Samples	The water samples were never received.	1	4,5
+c369	"But you might as well see for yourself if you don't believe me. The note, in Tuppence's well-known schoolboy writing, ran as follows: ""DEAR JULIUS, ""It's always better to have things in black and white."	Tuppence didn't have well-known handwriting, it wasn't recognizable as her note.	17	1,2,3,6,7
+c370	Through the opt-out approach, Texas attorneys contributed $1 million this year, doubling 2001 contributions.	The opt-out approach has never increased how much Texas attorneys can contribute in the last twenty years.	11,12	3,4,5
+c371	 Folklore of Ibiza	War history of Ibiza	0	0,1
+c372	But if you do, kill them.	If the situation is that, you should wait to kill them.	4,5	7,8,9
+c373	yep that's what he's worried about the trees or a bush because lilac bushes they they grow fast some people uh would really like to have them and then the people that do have them they spread and they sprout all over their their lawn	He's not worried about the trees. Lilac bushes take a long time to grow.	3,4,16,17	1,2,10,11,12,13
+c374	Text box 4.1 describes how the NIPA and unified budget concepts differ.	Text box 4.1 does not explain anything about NIPA.	3	3,4,5
+c375	uh-huh i i thought they did an excellent job of actually aging the person you know from when he was a little kid to little older to little older to except the last the very last you know the last person the last actor that played the kid	It was a very crappy job they did as they tried to make him grow up through the years.	7	3,4
+c376	i wonder how they kept up with them though it seemed like the buffaloes were moving so fast i guess they graze though that wouldn't have been a problem	I've never thought about how they kept up.	1	1,2
+c377	Arafat is also ailing and has no clear successor.	Arafat is in good health and has a clear line of succession in place. 	3,6,7,8	2,3,4,8,9,10,11,12,13
+c378	They proclaimed Japan's mission to bring progress to its backward Asian neighbors in language not so very different from that of the Europeans in Africa or the US in Latin America.	Japan had no intention of progressing its Asian neighbors in the area of language.	3,4,5,6	2,3,4,5
+c379	This site provides information links, tools, and resources developed for the benefit of the audit profession, including audit programs, best practices, and research services.	This site is a special portal for people who wish to make anonymous complaints about auditors.	9,10,11,12,13,14,15	6,12,13,14,15
+c380	(j) Promotional items a member receives as a consequence of using travel or transportation services procured by the United States or accepted pursuant to 31	A non-member can receive promotional items if they are from Spain and do not travel.	11,13,18,19	10,13,14
+c381	The Lake District is not the place to come if you want lots of action into the early morning hours.	The lake district is open 24/7.	4,6,17,18	4,5
+c382	no uh i have a friend who works for TI and uh i work for a a tire service here in i'm from Dallas	I was born and raised in Alaska and am unemployed.	13,20,23	4,5,6,9
+c383	For more sweeping panoramas, you can hike for less than an hour to either summit Petit-Bourg (716 m/2,349 ft) or Pigeon (770 m/2,526 ft).	For more sweeping panoramas, you can go swimming in the canyon.	6,15,20	7,10
+c384	She graduated in 1995 owing $58,000 in loans.	She owed nothing.	4,5	1,2
+c385	I like ethnic humor.	I hate racial jokes.	1,2,3	1,2,3
+c386	After the purge of foreigners, only a few stayed on, strictly confined to Dejima Island in Nagasaki Bay.	A few foreigners were left free after the purge on foreigners.	10,11	4,5
+c387	um yeah that sounds kind of neat uh is location at all important to you like you know how far it is from your house or whatever	That sounds really stupid. 	3,6	1,3
+c388	"But you will find it all right."""	You will find it lacking.	5,6	4
+c389	Smart men make good thieves, as long as they're desperate.	It is best for a thief to be dumb.	0,1,2,3,4	2,5,8
+c390	and maybe we'll run across each other again	I don't think there's a chance of us ever meeting again.	1,2	1,2,3,4,5
+c391	We shouldn't have been here as soon as this even, if it hadn't been for the fact that there was a smart doctor on the spot, who gave us the tip through the Coroner. 	The doctor and the Coroner decided not to give us the tip.	27	5,6,7,8
+c392	i can believe i can believe that	I don't believe that for a second.	1,2	1,2
+c393	I feel, though, that I should like to point out to you once more the risks you are running, especially if you pursue the course you indicate.	I want to join you on this course and forget about the risks.	8,9,15	1,2,3,4,9,12
+c394	'For one thing, Mr. Franklin, you appear to be taking your...re-actualisation...extremely well.'	Mr.  Franklin was not adjusting very well to the situation.	9,10,11	3,4,6
+c395	"The Joint Venture which has so amply justified itself by success!"" It was drunk with acclamation."	There was no justification for The Joint Venture as it was unsuccessful.	6,7,13,14,15	2,3,11
+c396	Second, Clinton hasn't used the bully pulpit to speak out against drug use nearly as often as his two predecessors did.	Hillary Clinton used the bully pulpit to speak out against drug use.	2,3	2
+c397	all they you know thinking that they're going to have money and jobs and success and everything and then they then there is no jobs and they end up homeless and not knowing anybody and no money and it's terrible	They always reach their potential and become successful.	23,24,29,35,36,39	2,3,4,6,7
+c398	The museum is open from 9am to 1pm and 2 to 5pm Monday to Friday (with audio-visual shows in the afternoon), and on Saturday mornings.	The museum is only ever open in the afternoon.	5,24	3,4,5,8
+c399	Against his own advice, Ca'daan dared to stare off the edge once as they neared the end.	He stared off the edge at the beginning.	16	7
+c400	In a new retrospective, the Vienna modernist (1890-1918) wins critics' grudging respect.	Critics regard the Vienna modernist with zero praise to this day.	10,11	6,7
+c401	The data would be presented as required supplementary stewardship information accompanying the consolidated financial statements of the Federal Government but not in individual reports of its component units.	The data would be included in individual reports concerning the constituent units of the federal government.	5,6,7,8,9,20,22,23	5,6,7
+c402	well that's not why i got it right  how do you like your tread mill	That's the reason I procured it.	2,3,4,5,6	1,2,3,4,5
+c403	Scutari is traditionally associated with the name of Florence Nightingale.	There is no association between Florence Nightingale and Scutari.	2,3,4	2,3,4
+c404	On your right is the entrance to the 16th-century Sandal Bedesten, with lovely brick vaults supported on massive stone pillars.	We will not be able to show you the entrance to the Sandal Bedesten because of construction.	0,1,2,3,4,5	0,1,2,3,4,5,6,7,8,9
+c405	I think it is important for everyone to understand the extent to which First-Class mail is already carrying a disproportionate share of the institutional cost or overhead burden of the postal system.	The burden is enough for first class mail to handle.	10,11,12,19,20,21,22,23,24,25,26,27	3,4,5,6,7,8,9
+c406	Splendid! 	The situation is shitty.	0	3
+c407	The analyses comply with the informational requirements of the sections including the classes of small entities subject to the rule and alternatives considered to reduce the burden on the small entities.	There is no need for the analyses to attempt to meet any informational requirements.	2,3	2,3,9,10
+c408	It's a great novelty, but very expensive.	It's fairly cheap and mundane.	2,3,6	1,2,4
+c409	The Kal nodded.	The Kal then shook its head side to side.	2	3,4,5,6,7,8
+c410	i think the rate of processing is just about uh reached the rate of housing anyway so keep the keep the normal as it is can't upset the system very much	The rate of processing is way higher than the rate of housing to upset the system.	7,8,10	5,6
+c411	the only problem is it's not large enough it only holds about i think they squeezed when Ryan struck out his five thousandth player they they squeezed about forty thousand people in there	It holds 70,000 people.	28,29,30	2,3
+c412	yeah its too open yeah and there's uh they have got some forty to fifty foot high cliffs around Possum Kingdom and you just get up and ski uh adjacent to those and uh and it doesn't make any difference how windy it is you don't notice it	There are no cliffs around Possum Kingdom and no where to ski.	16,17,23,24,25,26,27	2,3,8,9,10,11
+c413	Look, there's a legend here.	There isn't a legend here.	1,2,3	0,1,2,3
+c414	The Wall Street Journal Business Bulletin has a fact that dramatizes how profoundly well-off this country is--Americans throw out approximately 12 percent of the stuff they buy at the supermarket.	Americans just throw away 12 percent of what they buy at gas stations.	29	11,12
+c415	Agency officials stated that copies of both the initial and the final analysis were submitted to the Chief Counsel for Advocacy at the Small Business Administration as required by section 605(b).	The Chief Counsel for Advocacy at the Small Business Administration did not actually receive either of these analyses.	13,14,15	10,11,12,13
+c416	And it was exactly on such a day, as this carefully selected Wednesday (which blushed from this distinction), that the mini-anti-aggressor was going to make the biggest of impressions.	Tuesday is the day that the aggressor will act. 	12	0
+c417	we have tickets waiting for us	We have no tickets waiting for us.	1,2	1,2,3
+c418	Leather Wares	The wares are made of cotton and coarse fabric.	0	3,4,5,6,7,8
+c419	So he clearly found a way to project a bandwagon of strength without putting U.S. troops on the line.	He portrayed strength by putting the US troops in harms way.	12,13,14,15	4,5,6,7
+c420	This is Susan.	This is Bob. 	2	2
+c421	Designed by George Meikle Kemp, an unknown draftsman of humble birth, the monument took its inspiration from the design of MelroseAbbey.	The design was completely original and uncopied. 	13,14,15,16	2,3,4
+c422	In fact, the sloping shoulder was the noticeable feature of the new clothes of the Dior era, coming as it did immediately in the wake of the Joan Crawford/Rosalind Russell period and its vigorous shoulder padding.	Dior was known for their exquisite blazers with thick heavy shoulder pads. 	3,4	9,10,11
+c423	Who are these sons of eggs?	I wish they were daughters of eggs.	0,1	0,1,2,3
+c424	When Jesus was born in about 4 b.c. , Joseph and Mary escaped Herod's paranoia by fleeing into Egypt with the new-born infant.	Jesus' birth has been dated to around 10 B.C.	6	7
+c425	Don't remember. 	Yes, I remember.	0,1	2
+c426	i think we have too thank you very much you too bye-bye	I was displeased with your actions and I don't think you deserve a thank you.	3,4	8,9,10,11
+c427	 Jon took Susan to the mother of the boy who had befriended her.	Jon told Susan to stay where she was.	1,3,4,5,6,7,8,9,10,11,12	1,3,4,5,6,7
+c428	"This is my old friend, Monsieur Poirot, whom I have not seen for years."""	Monsieur Poirot is a long time enemy of mine; I hate her. 	3,4	4,5,6
+c429	apparently apparently the appraisers likes it because our taxes sure is high  isn't it it really is	The appraiser did not like it one bit.	4,5	2,3,4,5
+c430	senior management oversight and approval ofRequired acquisition objectives and plans.	the referenced organization does not have a senior management division.	0,1	3,4,5,7,8
+c431	The interior of the palace is very dark, and the use of flash is forbidden, so photographers should think twice before paying the extra fee for bringing in a camera or video equipment.	The interior of the place is extremely bright, so bring a camera and snap a few pictures.	6,7,18,19,20,26,28,29	6,7,9,10,11
+c432	and that you're very much right but the jury may or may not see it that way so you get a little anticipate you know anxious there and go well you know	Even if you're correct, I think the jury would pick up on that.	9,10,11,12,13,14	6,7,8,9,10,11,12
+c433	Be of good cheer,	Be in a bad mood.	2,3	3,4
+c434	[I]n You're the Top Porter does not capitalize on the text's potential for realism.	You're the Top Porter does justice to the text's potential for realism. 	5,6,7,8,10,11	4,5,6,8,9
+c435	For example, Bruce Barton's The Man Nobody Knows , a best seller in 1925-26, portrays Jesus as the ultimate businessman.	" ""The Man Nobody Knows,"" by Bruce Barton, was never a best seller."	9,10,11	8,9,10,11
+c436	Had we had more money we would have facilitated more conferences.	The reason we did not have more conferences was not a money issue.	0,1,2,3,4	9,10,11,12
+c437	Of the four main buildings, all of them whitewashed and decorated with bright painted sculptures, the first is where the worshippers bring offerings of flowers and fruit, the second is for sacred dances, and the third for viewing the divine effigies, which are enshrined in the sanctum of the fourth and tallest edifice.	There are six main buildings, all painted beige.	2,3,4,8	2,3,4,7
+c438	Now they're telling mothers to deny food to infants all night long once the kids are a few months old.	Infants are allowed to feed at night during their first months.	5,6,7,8,9,10	2,3,4,5,6
+c439	The park is a graceful and elegant expanse with fine views of the mountains, much loved by Dubliners since it was first opened to the public in 1747.	The park is okay and the views of the mountains are just okay.	4,6	3,11,12
+c440	Then I considered.	I refused to even consider it.	2	1,2,4
+c441	Diamonds are graded from D to X, with only D, E, and F considered good, D being colorless or  river white,  J  slightly tinted,  Q  light yellow,  and S to X  yellow.  	There is no difference between diamonds, all having the same properties.	13,14,17,19,20,22,23,24,25,26,28,30,31	9,10
+c442	i think there would be an awful lot of resentment and um i i really don't think it would be feasible on our country	There would be a lot of enjoyment and I think it's really feasible for the country. 	9,15,16,17,18,19,20	6,9,10,12
+c443	In its submission, HCFA did not identify any other statute or executive order imposing procedural requirements relevant to the rule.	HCFA did identify many other executive orders	4,5,6	1,2
+c444	The truth?	That's a lie.	1	2
+c445	uh there's uh some very nice places like the bass which is a uh sort of a huge monolithic rocks that you can you can walk up the beach and into these uh enormous caverns that are partially submerged and you can wade in the pools and so forth very popular tourist spot	The rocks at the beach aren't really worth a visit. 	50,51,52	5,7,8,9
+c446	Built in a.d. 715 to help measure the peak and trough of the Nile flood.	It was built to bring water to the city.	5,6,7,8,9,10,11,12,13,14	3,4,5
+c447	I'd noticed him more than once and I'd figured it out in my own mind that he was afraid of somebody or something.	He looked like a brave young man who is never afraid of anything or anyone.	17,18	9,10
+c448	On the second point, Judge Newton said in a recent interview, I've heard this complaint a hundred times.	Judge Newton had never heard that complaint before.	11,12,13,14	3,4,6
+c449	However unsatisfactory and over-argued the revisionist case, it did make one serious  that the United States had clear national and economic interests and found the Cold War an unusually congenial way to pursue them.	While the revisionist case has always been held in high regard, it has never made any serious points about the United States economic interests.	1,3	9,10
+c450	The new rights are nice enough	In all honesty, the rights recently put in place are nowhere near enough	4	10,11,12
+c451	and you fry them with garlic and a little bit of couple dashes of hot pepper	Do not put any garlic or hot pepper in it.	5,8,9,14,15	0,1,2,3,4,5,6,7
+c452	I turned a curve and I was just in time to see him ring the bell and get admitted to the house.	By the time I turned the curve I was too late to see him admitted into the house, and could only hear the bell.	7,8,9	9,10
+c453	well we bought this with credit too  well we found it with a clearance uh down in Memphis i guess and uh	We bought non-sale items in Memphis on credit.	12	2
+c454	On top is a broad plateau 650 metres (2,132 feet) long by 300 metres (984 feet) wide.	On top is a lake, there aren't any plateaus there.	5	6,7,8
+c455	There are also dozens of fabulous pictures.	I'm sorry. We do not have any pictures to show you at this time.	3,4,6	3,4,5,7
+c456	John Panzar has characterized street delivery as a bottleneck function because a single firm can deliver to a recipient at a lower total cost than multiple firms delivering to the same customer.	There are no cost differences, according to John Panzar, between one or multiple firms delivering to a customer.	21,23	3,4,5,7
+c457	This one ended up being surprisingly easy!	This was a really hard one. 	6	4
+c458	Tax purists would argue that the value of the homemakers' hard work--and the intrafamily benefits they presumably receive in return for it--should, in fact, be treated as income and taxed, just like the wages paid to outside service providers such as baby sitters and housekeepers.	To tax purists, the value of the homemakers' hard work should not be taxed.	21,24,29	10,11,12,13
+c459	It is extremely dangerous to  Every trip to the store becomes a temptation.	Even with every trip to the store, it never becomes a temptation.	10,11,12	8,9,11
+c460	In 1995 and again in 1998, the Legal Services Corporation recognized that legal services programs were going to have to change the method and manner in which they conducted their business if they were going to remain viable and responsive to the needs of low income persons.	The Legal Services Corporation has never considered the needs of the poor.	12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40	4,5,6
+c461	The streets are crammed with vendors selling shrine offerings of sweets, curds, and coconut, as well as garlands and holy images.	Vendors have lined the streets with torches and fires.	7,8,9,10,11,13,17	6,8
+c462	Five years ago, Speaker-elect Newt Gingrich promised to make important information available online at the same moment that it is available to the highest-paid Washington lobbyist.	Newt Gingrich promised that information won't ever be shared online. 	7,8,9,10,11,12	4,5,6,7,8,9
+c463	Nowadays, a poverty lawyer working for one of New York's many agencies representing the indigent - including Legal Aid, the South Brooklyn Legal Services, the Lawyers Alliance for New York, InMotion, the Lawyers Committee for Human Rights, Volunteers of Legal Service, the Bronx Defenders and New York Lawyers for the Public Interest - might begin his or her career at $32,000 per annum, compared with the $125,000 average first-year associate salary at the city's larger firms.	Lawyers often move to larger firms because they will work for less pay.	60,63,64,65,66	11,12
+c464	 It was utterly mad.	It was perfectly normal.	2,3	2,3
+c465	This was the site of the Bateau-Lavoir studio, an unprepossessing glass-roofed loft reconstructed since a 1970 fire.	The fire in 1970 did no damage to the Bateau-Lavoir studio.	12	5,6
+c466	Another thing those early French and Dutch settlers agreed upon was that their island should be free of levies on any imported goods.	The French and Dutch settlers preferred a tax on imports.  	16,17,18	5,6,7
+c467	"They were quite, tetanic in character."""	They were very relaxed.	3	3
+c468	The unintended side effect is radical, direct  In what other state do voters set the tax rates?	There is a radical side effect that was intended.	1	8
+c469	eThe number of deletions was negligible.	The huge number of deletions caused a ruckus.	5	1
+c470	kind of kind of nothing i won't have anything to do with	I'd love to get involved more with it.	6,7,8,9,10	1,2,3,4,5
+c471	Because the paper did not say that.	The paper said so.	3,4,5	2
+c472	The basic elements of life in the Aegean began to come together as early as 5000 b.c. , and were already in place by the late Bronze Age (c.	Aegean life never succeeded.	8,9,10,11,12,13,14,15,16,19,20,21,22,23,24,25,26,27	2,3
+c473	have that well and it doesn't seem like very many people uh are really i mean there's a lot of people that are on death row but there's not very many people that actually um do get killed	There are only a couple of people are on death row.	18,19,20	2,3,4,5,6
+c474	' She gets a little obsessive about her sauce.	She is very lazy with her sauce and couldn't care less what goes into it.	4,5	2,3
+c475	However, if people can readily withdraw money from tax-preferred accounts for purposes other than retirement, there is no assurance that tax incentives would ultimately enhance individuals' retirement security.	If people can't readily withdraw money from tax-preferred accounts for purposes other than retirement, there is no assurance that tax incentives would improve retirement security.	3,5	2,4
+c476	The castle itself comprises an early 17th-century tower house, restored with Irish oak from the park which is held together without a single nail.	The castle itself does not contain any early 17th-century tower houses.	3,4,5,6,7,8	3,4,5,6,7,8,9,10
+c477	The event is the definition of a crowd pleaser, replete with appearances by the Rockettes, the Mormon Tabernacle Choir, and Santa Claus (the act isn't entirely without bite; there's also a very funny moment involving a heart attack).	Expectations are low for the event on the back of Santa Claus's absence due to health concerns.	11,12,13,20,21	10,11,12
+c478	yeah okay yeah those games are fun to watch you you you watch those games	Those games are really boring.	6,7,8	3,4
+c479	However, the extent to which these comments were electronically available and the role that this access played in the rulemaking process varied substantially.	The comments and the extent of their availability played no role in the rule making process. 	5,6,7,8,9,10,11,12,16,17,21,22	0,1,2,3,4,5,6,7,8,9,10
+c480	The association's mission is to reduce the incidence of fraud and white-collar crime through prevention and education.	The association is an illegal organization that specializes in money laundering.	5,7,8,9,10,12	7,9,10
+c481	Near Jerusalem	It is very far from Jerusalem.	0	3
+c482	Traditionally, certain designs were reserved for royalty, but today elegant geometric or exuberant, stylized floral patterns are available to all.	Elegant geometric patterns are only available to royalty.	17,18,19	4,5,6,7
+c483	um-hum they have socialized socialized health care	They don't have health care over there	1,2,5,6	0,1,2,3,4
+c484	(Cohen 1999) Although many observers would view this as an extreme step it could reduce costs and allow increased efficiencies.	They don't want to lower costs. 	6,8,10,11	1,2,3
+c485	it'll be a nice little bit of money we're going to	We are not going to make any money on new venture.	4,5,6,7	2,3,4,5,6,7
+c486	They just don't like it as much as men do.	They like it way more than men do.	2,3,5,6	1,2,4
+c487	The national mood is stressed on the octagonal spire of the University's Rajabai Clocktower, with 24 figures representing the castes of the Maharashtra State, of which Mumbai is the capital.	The national mood is not expressed on the octagonal spire of the Rajabai Clocktower.	4	4,5
+c488	Scotland became little more than an English county.	Scotland was far greater than an English county.	2,3	2,3
+c489	okay  i guess i'll get back to my laundry	Let's find some place to continue our conversation. 	8	7
+c490	The day may well come, as Barlow and Dyson seem to believe, when book publishers as we know them will disappear.	Barlow and Dyson do not believe that book publishers have the possibility of disappearing.	9,10,11	3,4,5
+c491	Because marginal costs are very low, a newspaper price for preprints might be as low as 5 or 6 cents per piece.	Newspaper preprints can cost as much as $5.	16,18,19	7
+c492	um-hum yeah i saw that for the first time yesterday in the evening	I have seen that many times before.	7,8	4,5
+c493	When we encounter the young woman again, she has taken a job as the live-in domestic at a huge and crumbling Roman townhouse belonging to an English loner named Jason Kinsky (David Thewlis).	When we encounter the young woman, she was unemployed.	4,9,10,11	8
+c494	so you know well a lot of the stuff you hear coming from South Africa now and from West Africa that's considered world music because it's not particularly using certain types of folk styles	They rely too heavily on the types of folk styles.	26,28,29,30	1,3,4,6
+c495	That is exactly what our head coupon issuer Alan Greenspan did in 1987--and what I believe he would do again.	This is what Greenspan did in 1987 so I don't think he will do it again.	17,18,19	9,10,11,12,13,14,15
+c496	The man shifted slightly and cut the spear out of the air.	The man watched motionlessly as the spear fell. 	2,3	3
+c497	And it needs work too, you know, in case I have to jump out with this parachute from my lil' blue sports plane for real.'	It doesn't need to work.	2,3	1,2,4
+c498	Founded in 1979, AFFIRM's members include information resource management professionals within the federal, academic, and industry sectors.	AFFIRM was founded in the early 2000s.	2	6
+c499	yeah it's a U S territory and it's just we own it or	We own the land, but it's not a U.S. territory.	1,2,5	6,7,9
+c500	For instance, mandatory account proposals are more likely to increase private saving because such a program would require households that do not currently save-such as many low-income individuals or families-to place some amount in an individual account.	Mandatory account proposals would outlaw savings in individual accounts.	6,7,8,9	3,4
+c501	Beautiful examples of enamelware, ceramics, and pottery are produced in great abundance, often following a Celtic theme.	Little pottery is produced that has a Celtic theme.	10,11	0
+c502	We're going to try something different this morning, said Jon.	Jon thought everything should stay the way it was.	3,4,5	2,3,4,5,6,7,8
+c503	You will learn later that the person who usually poured out Mrs. Inglethorp's medicine was always extremely careful not to shake the bottle, but to leave the sediment at the bottom of it undisturbed. 	The person pouring Mrs. Inglethorp's medicine was always very careful to shake the bottle. 	18,19,20	10,11
+c504	and see the thing is you know he go out and he'll spend it when he wants you know and uh uh i'm afraid to i'm afraid to use that credit card	I just love using my new credit card.	26,27,28	1,2,3
+c505	If you missed the two top stories in yesterday's USAT --the government's first post-deregulation attempt to preserve competitiveness among airlines and the emergence of a drug that can prevent breast cancer--they are on the NYT 's front today.	These two stores about post-deregulation and breast cancer drug are not on the front page of NYT today.	31,32,36	10,11,13
+c506	Enthusiasm for Disney's Broadway production of The Lion King dwindles.	Audiences for The Lion King on broadway are still turning out in record numbers.	0,9	0,12,13
+c507	Very simply. 	In a complicated way.	1	2
+c508	they might be but not at not at the human factors level	They are actually at the human factors level. 	6,7,9,10,11	3,5,6,7
+c509	upwards of a mile but Washington is one of my favorite places to visit uh my daughter lives in Arlington and when i go to visit her  i love to get out on that bike trail and either ride the bike oh gosh you can ride a bike  practically all the way to southern Virginia	My daughter isn't located near any bike trails.	31,32,34,35	2,4,5
+c510	no i i just painted	I didn't just paint. 	3,4	1,2
+c511	A newly unified Christian Spain under the Catholic Monarchs, Ferdinand and Isabella, completed the Reconquest, defeating the only Moorish enclave left on the Iberian peninsula, Granada, in 1492.	Ferdinand and Isabella completed the Reconquest to establish a Muslim Spain.	3	9
+c512	Major journeys from one part of the country to another, say, from Milan to Rome or down to Naples, is most enjoyed by train buffs and travelers with plenty of time, patience, and curiosity.	Train travel in Italy is generally quick, making it a practical option for impatient travelers.	28,29,30,31	6,13
+c513	Are you sure we should take him down there?' Greuze asked Natalia.	Natalia was certain it was alright to bring him down there, and told Greuze that no matter what, he must end up down there. 	0,1,2	6,13
+c514	One he broke back to about the length of his forearm.	He snapped it until it was just a couple of inches long.	7,8,10	8,10
+c515	yeah well we veered from the subject	We managed to stay on subject the whole time.	3,4	3,4
+c516	oh for heaven sakes for the drugs yeah uh-huh	Drugs aren't a factor.	4,5,6	0,1,2,3
+c517	Through the Web site, a total of 1,634 associates donated nearly $200,000 to Legal Aid in 2002.	41,634 associates gave money to Legal Aid through their site.	7	0
+c518	Guards would regulate those who entered and departed.	Guards let people come and go freely.	2	6
+c519	or just get out and walk uh or even jog a little although i don't do that regularly but Washington's a great place to do that	I regularly go for a walk or a jog at Washington's.	14,15,16,17	1
+c520	and i don't think they've repainted since	I think they repainted it a few times now.	2,3,4,5	2,3
+c521	A sidebar notes that controversy remains over the Mars meteorite that crashed into Antarctica about 11,000 years  While scientists have demolished most of the evidence that the meteorite contained living creatures, they cannot explain why the meteorite contains a molecule that on Earth is only produced by biological processes.	The Mars meteorite crashed over 30,000 years ago.	15	5
+c522	oh constantly	Rarely	1	0
+c523	Ca'daan's mouth hung open.	Ca'daan kept his mouth shut.	3	4
+c524	I am due to speak at a meeting at two o'clock.	I have been told that I will not be permitted to speak at the meeting.	2,3,4	7,8,9,10,11
+c525	This breakdown of PA-Israeli cooperation is the basis for the Israeli complaint that Arafat is culpable for last week's Jerusalem bombing.	This breakdown of PA-Israeli cooperation is not the basis for Israeli complaints that Arafat is culpable for last weeks Jerusalem bombing.	5,7	5,6,8
+c526	Each state is different, and in some states, intra-state regions differ significantly as well.	All states are exactly the same.	0,1,3	0,1,5
+c527	The baby's father responded by filing a wrongful death suit.	The baby's mother responded by filing a rightful death suit.	2	2
+c528	A contract that provides for a firm price or in	The contract doesn't specify details on price.	6,7	2,3,4
+c529	All the steps of data reduction and coding are described, along with the basis for transformations in these steps.	Only the resultant data set is presented.	0,2,9	0,2,3,6
+c530	The pieces are unloaded and fed into sorting machines.	They were unloaded but not sorted	5,6,7,8	4,5
+c531	right well there's yeah there there's going to be some measure of incentive uh reward or whatever but the reward ultimately ultimately comes down to what you want	They have a policy against incentives. 	5,6,7,8,9,10,11,12	1,2,3,4,5
+c532	The other bank pays the fund interest based upon tiered account levels, more typical of a large commercial account.	The fund collects a flat interest rate from the bank.	6,7,8,9,10,11	4,5,6
+c533	they don't i don't i don't work at TI	We all work together at TI.	5,6	2
+c534	And far, far away- lying still on the tracks- was the back of the train.	The train was speeding along the track. 	4,5	3,4
+c535	Look out for that overseer up there.	You do not need to worry about that overseer.	0,1,2	2,3,4,5
+c536	As it is now, Web companies not only have the ability to provide diabolically precise demographic targeting to political campaigns, they can also make such offers exclusively.	Web companies freely give this demographic information to the public, so it is available to all campaigns. 	26	13,14,15
+c537	Even if auditors do not follow such other standards and methodologies, they may still serve as a useful source of guidance to auditors in planning their work under GAGAS.	Auditors should ignore them when they follow other standards and methodologies.	17,18	2,3
+c538	yeah they were my favorite team for a while	They were always the worst team ever.	4,5	4,5
+c539	The Shore Temple, which has withstood the wind and the waves for 12 centuries, is made up of two shrines.	The Shore Temple has been lost to time. 	5	3,4,5
+c540	I hope that all key parties will take the necessary steps to address any real and perceived problems that serve to undercut public trust and confidence.	I hope that no key parties take steps to address problems.	3,4,5	3,4,5
+c541	We are concerned that the significant emissions reductions are required too quickly.	We're concerned about emissions reducing too quickly. 	7,8,9,10,11	4,5,6
+c542	um well i hate to yes i do	I really love to. 	3	1,2
+c543	No, I exclaimed, astonished. 	Okay, I agreed breezily. 	2,3	2,3
+c544	I am asserting my membership in the club of Old Geezers.	I am denying I am a member of the club of Old Geezers.	2,3,4	2,3,4,5,6
+c545	In kampung workshops you can watch fantastic birds and butterflies being made of paper (and increasingly, nowadays, of plastic, too) drawn over strong, flexible bamboo frames.	There are no paper butterflies and birds in the kampung workshops.	3,4,5,6,7,8,9,10,11,12,13	2,3,4,5,6
+c546	i'm not sure what the overnight low was	It was 37 degrees last night.	1,2,3,4,5,6	2,3
+c547	"Why, when I was your age, I already had....""  Dave wasn't listening any longer."	Dave was paying the speaker lots of attention.	10,11,12,13	2,5,6,7
+c548	All the Eilat activities can be booked through Red Sea Sports (see Scuba Diving, below).	Currently you can only book activities with Black Sea Boating.	4,5,6,7,8,9,10	2,3,4,6,7,8,9
+c549	The increased investment has contributed to higher GDP growth in recent years, and the stronger economy should help in servicing the debt owed to foreigners.	Steep GDP decline in recent years has been contributed to increased investment.	6,7,8	0,1,2
+c550	11 These departures permit them take advantage of the lower cost of living as well as to be reunited with their spouses and children.	The departures help them take advantage of the high cost of living in other areas.	9	8
+c551	All requests to provide live testimony at one of the two public hearings were granted.	Most of the people who requested a live testimony ended up being dissapointed. 	0,1,13,14	0,4,5,9,10,11,12
+c552	yeah and they've got those bins that just stay there and they decorated them real cute you know with a bunch of big old flowers and stuff	The bins move around and are very plain.	12	7
+c553	The last thing we want is any more attention or any more bounty hunters.	They waived their hands to get more attention.	1,2,3,4,5,7,8	1,2,3,4,5,6,7
+c554	Along with each step, certain practices proved especially important to the success of their efforts.	No practices were helpful 	4,5,6,8	0,1,2,3
+c555	During the hottest hours, things come to a virtual standstill, though the Caribbean siesta is an hour or two shorter than its Mediterranean counterpart.	It was during the hottest hours that everything proceeded smoothly.	9	8,9
+c556	uh well i figured if i had it done in the garage at the Toyota dealer i would be looking at probably three or four hundred dollars	I had it done at the Toyota dealer's for fifty bucks.	22,24,25	9
+c557	Routine screening and intervention will require engendering a sense of role responsibility among emergency department clinicians towards addressing substance abuse.	Routine screening has no impact on substance abuse prevention.	4,5	3,4
+c558	For instance, one state government CIO attributed his success to his breadth of experience across a variety of financial, retail, and IT units, which facilitates his ability to	There was not a single state where it was successful.	2,3,8	2,3,4,5
+c559	Yes, undoubtedly the hand of Mr. Brown! Mr. Carter paused.	No identity could be assigned to the severed appendage. 	0	0
+c560	That story remains to be told.	The story has been told a million times.	2,3,4,5	2,3,4
+c561	do you do you put it in the refrigerator then or you	You don't have a refrigerator.	6,7,8	1,2,4
+c562	Apparently, Greuze wasn't worried about needing protection.	Greuze concerned himself all the time with needing protection.	2,3	1
+c563	The agency also receives a percentage of money from the Interest On Lawyers' Trust Accounts.	They do not receive any funding from the account.	3	1,2,3
+c564	it was really a nice compromise especially because she felt like she was still living in her own house and she still had her own couch and her own bed and it it really helped a lot and she was a lot more comfortable and she didn't	They are in these small homes, but it is very sterile, plain wall and little furnishings. She was not happy about it.	40,41,42,43	18,19
+c565	While the Freedom of Information Act, the Trade Secrets Act, and other statutes may generally protect certain categories of information from disclosure by an agency to the public, this protection does not justify withholding the information from GAO.	The Freedom of Information Act wants all people to share all information with each other, no matter what. 	15,16,17,18,19	9,10,11
+c566	After their savage battles, the warriors recuperated through meditation in the peace of a Zen monastery rock garden.	The warriors had savage battles at a Zen monastery rock garden.	6,9,10,14,15	3,4,5,7,8
+c567	For example, a case study of the effectiveness of a job training program might need to take into account general economic trends, such as unemployment rates in the community.	General economic trends wouldn't have to be considered by a case study on job training effectiveness.	16,17,18,19,20,21	0,1,2,3,4,5,6,7
+c568	Once there, he or she must alight from the vehicle and proceed to the mailbox, then return to the vehicle, turn it around and proceed to the road.	They should never get out of the vehicle.	5,6,7,9	2,3,4,5,7
+c569	'I don't know what happened, exactly.' I said.	I knew what had happened.	1,2,3,4	1,2,4
+c570	looking at that and you know and if it's if it's funny or if it keeps my interest if it's exciting i'll watch it if not i don't and times that i saw that or pieces of that it wasn't any it wasn't great Thirty Something i watched a few times because there was a few good episodes and then after that it it i just lost interest in it	I've never watched Thirty Something because none of the episodes were any good.	56,57	6,7,8,9,10,12
+c571	36 AC usage nationally for mercury control from power plants should be roughly proportional to the total MWe of coal-fired facilities that are equipped with the technology (this assumes an average capacity factor of 85 percent and other assumptions of Tables 4-4 and 4-5).	Power plants' mercury control AC usage is higher than total MWe from coal facilities.	12,13	7,8
+c572	Long ago--or away, or whatever--there was a world called Thar?? and another called Erath.	Erath is the only world that has ever existed.	5,6,7,8,9	0,1,2,3,4
+c573	approaches to achieving missions vary considerably between agencies.	Approaches to achieving missions changes very little.	4,5	4,5,6
+c574	"Sit down, will you?"" Tuppence sat down on the chair facing him."	He told Tuppence to get out. 	0,1	4,5
+c575	Or else it was administered in the brandy you gave her.	There is no way it could have been in the brandy you gave her.	4	2,3,4,5,6,7,8
+c576	The Weekly Standard argues that America should back Lee with words now and, if necessary, military force later, but the Washington Post reports that the U.S. envoys will pressure him to back down.	The Weekly Standard and Washington Post have identical views on how the U.S. will approach Lee.	1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,20,21,22,23,24,25,26,27,28,29,30,31,32	7,8
+c577	Don't expect to be swinging much after midnight, even in towns.	Things stay open all night because it's a place to party.	2,3,4,5,6,7	0,1,2,3,4
+c578	There are actually three winding roads, or the Grande, the high road, starting out from the Avenue des Diables-Bleus in Nice; the Moyenne, the middle one, beginning at Place Max-Barel; and the Basse, along the coast from Boulevard Carnot, but usually jammed with traffic.	The Moyenne is a modern four-lane highway that runs straight from Nice to Paris.	26,27,29,41,42,43	4,5,6,10,11
+c579	Egg cattle merry wedged marvelous	The ducks were at the pond.		
+c580	He had to try something.	He didn't need to try anything.	1,2	1,2,3
+c581	We know essentially nothing about life beyond Earth.	We know everything about life beyond Earth. 	0,1,2,3	0,1,2
+c582	and they're illegal so i don't think it would do us any good to outlaw them all together	Since they're already illegal, outlawing them would be good.	4,5,6,7,8,9,10,11,12	5,6,7,8
+c583	Although this award will now be handed out annually, Bailey was selected for several years of his commitment.	Bailey, despite his several years of commitment to the award, was never chosen once.	10,11	10,11,12
+c584	and oh okay and then went to Colorado	I had to move back to Nebraska just to survive.	5,6,7	3,4,5,6
+c585	We can leave them and let them die, said Thorn.	Thorn told us to make sure we save them. 	2,3,5,6,7	4,5,6,7,8
+c586	okay what types of music do you like to listen to	You hate music, don't you? 	7,8,9	1
+c587	The door opened and Severn stepped out.	They were waiting for someone to open the door for them.	2	2,3,4,5,6
+c588	The program covers those units covered by the new nationwide sulfur dioxide trading program that are located in the States in the WRAP and that, in any year starting in 2000, emit more than 100 tons of sulfur dioxide and are used to produce electricity for sale.	The program covers no units covered by the nationwide sulfur dioxide trading program.	3,4	3,4
+c589	The newspaper publishes just one letter a week from a reader, always with an editorial riposte at the bottom.	There are several letters from readers published daily.	3,4	2
+c590	well the difficulty is is if you look in the Old Testament and and the numbers of places that uh the Lord went out and just simply struck down and that was part of the problem when they went into the Promised Land that they that they uh they didn't destroy everybody and that that's	There was no problem when they went into the Promised Land.	32,33,34,35	2,3
+c591	Jon saw him ride into the smoke.	He rode towards Jon and out of the smoke.	4,6	5,6,8
+c592	And the door into Mr. Inglethorp's room? 	Don't tell me anything about the door to Mr. Inglethorp's room?	0	0,1
+c593	uh-huh oh yeah i hadn't heard that one let's see i can't oh gosh that that probably wipes out my whole inventory of TV shows other than um PBS i	The whole inventory of TV shows was wiped out.	25,26	1
+c594	At the far end of David Street, Temple Mount is one of the world's most sacred spots to three major religions.	Temple Mount is at the far end of Joseph Street.	5	8
+c595	The Commission published a summary of its Final Regulatory Flexibility Analysis in the Federal Register on September 12, 1996 (61 Fed.	The Commission did not publish its Final Regulatory Flexibility Analysis in 1996.	2	3,4
+c596	no i mean there there there was nothing to it i mean	There was plenty of work involved in this and it was a really big deal.	7,8,9	2,3,4
+c597	In his effort to build nationalism across Turkey in the 1920s, Ataterk instituted a campaign to suppress Kurdish identity that continues today.	In 1942, Ataterk tried to build nationalism in Turkey.	20,21	0,1,3,4
+c598	um something that i i think that i've noticed that i i have a friend i think if you're going into like uh law or medicine a very particular very specific field even even engineering you can get you can meet a lot of the requirements at a public um institution	Law,medicine or engineering students often can't get a job	40,41,42,43,45	5,6,7,8
+c599	There are two challengers to these top dogs.	These top dogs face only one challenge.	2,3	5,6
+c600	oh yeah all all mine are uh purebreds so i keep them in	mine are all mixed breeds	7	3,4
+c601	yeah because you look at the statistics now and i'm sure it's in your your newspapers just like it is in ours that every major city now the increase of crime is is escalating i mean there are more look at the look at the people there are being shot now i mean every day there's there's dozens of dozens of people across the nation they just get blown away for no reason you know stray bullets or California they were going out there and they were shooting and they get these guys and they don't do anything with them so i kind of i kind of agree with you i'm kind of you still in the in the uh prison system	Every major city is now showing a decrease in crime.	28,29,30,31,33	5,6,7,8,9
+c602	The Mosque of El-Jezzar, built in 1781, dominates the landside of the old city (the other three sides jut into the Mediterranean).	The old city is surrounded on all sides by the desert. 	0,1,2,3,7,8,9	6,7,8,9,10
+c603	This was used for ceremonial purposes, allowing statues of the gods to be carried to the river for journeys to the west bank, or to the Luxor sanctuary.	Statues of Gods and could not be moved.	11,12,13,14,15,16	4,5,6,7
+c604	The Chinese calendar was used to calculate the year of Japan's foundation by counting back the 1,260 years of the Chinese cosmological cycle.	There was no way to determine the year that Japan was founded in.	0,1,2,3,4,5,6,7,8,9,10,11	2,3,4,5,6,7,8,9,10,11
+c605	"The great thing is to keep calm."" Julius groaned."	Julius was silent.	7,8	0,2
+c606	Don't you remember? Today we're going to auntie Basia's birthday party.'	We are not going to Aunt Basia's birthday party today.	5,6,7,8,9,10	2,3,4,5,6,7,8
+c607	NEH-supported exhibitions were distinguished by their elaborate wall panels--educational maps, photomurals, stenciled treatises--which competed with the objects themselves for space and attention.	The exhibition was too bare and too boring. 	6,8,9,10,12	3,4,6,7
+c608	and if it's above six hundred you're going to have to do it and i got one thirty one	Over six hundred means nothing at all. 	9,10,11,12	3,4,5,6
+c609	you sound like this girl that i talked to about books and we got into movies one night	I've never heard anyone talk the way you do.	0,1,2,4,6,7,8	1,2,3,4,5,6,7,8
+c610	We hate them because they are smarter, or more studious, or more focused than we are.	We hold no ill will towards them.	1,2	2,3,4
+c611	Judge Bailey was chosen because he should be looked at as the representative of all future winners.	Nobody liked Judge Bailey.	8,9,10,11,12	0,1
+c612	to uh working a steady eight hour job as it were i had been working for a camp and had relatively real long hours sixteen years old and could handle getting up at five and not getting to bed until ten or eleven and	I gave up on working for the camp due to the long working hours.	14,15,17	1,2,3,4,5,7
+c613	It's absurd but I can't help it. Sir James nodded again.	Sir James thinks it's totally reasonable.	1	5
+c614	New York Times Book Review Editor Charles McGrath, a former deputy to William Shawn at the New Yorker , calls Lillian Ross' memoir about her affair with Shawn on occasion factually inaccurate or misleading and a betrayal of Shawn's high editorial principles.	McGrath claims that everything in the memorial was accurate.	30,31,33	8
+c615	and uh you know it's like they they consider that but it would be the same way here you know it's like if if you had to do it you know you have a big sign i'm sorry i don't get paid you know	I am paid well, even if it's here and the same.	39,40,41	2,3
+c616	yeah well that's the other thing you know they talk about women leaving the home and going out to work well still taking care of the children is a very important job and and someone's got to do it and be able to do it right and	It is not acceptable for anybody to refuse work in order to take care of children.	34,35,36,37,38	2,3
+c617	Asked about abortion the other day on CNN, Republican National Committee Chairman Jim Nicholson also invoked what is apparently the party-line  inclusive party.	The Republican National Committee Chairman freelanced on the topic of abortion when asked about it on CNN instead of reiterating the party-line.	15,20,21,22	5,17,18,19,21
+c618	"What am I to do with them afterwards?"""	The narrator knows what to do with them.	0,1,2,3,4	2,3,4,5
+c619	The centralization dear to Richelieu and Louis XIV was becoming a reality.	Louis XIV was against centralization.	1,8,9,11	3,4
+c620	Strom Thurmond , R-S.C., celebrated his 95 th birthday by announcing that he will relinquish the chairmanship of the Senate Armed Services Committee a year from now.	On his 85 Birthday, Strom Thurmond announced he will be running for president.	6,14,16,17,18,19,20,21	2,6,7,8,9,10,11,12
+c621	The main gate of the churchyard leads out to Greyfriars Place, and across the street you will find an excellent view of one of Scotland's newest museums.	Across the street from the churchyard there is a forrest, with little view of anything other than trees. 	19,20	11,12
+c622	My brain refusing to command properly.	My brain was commanding perfectly.	2,3,4	3,4
+c623	He caught his breath.	His breath would not come.	1,2,3	1,2,3,4
+c624	because i i mean i don't know it's just something i think something we need	I think it is completely unnecessary.	12,13,14	4,5
+c625	Also, considerable sums are spent by the Postal Service analyzing the costs associated with worksharing, and mailers/competitors incur considerable expense litigating their positions on worksharing before the Postal Rate Commission.	The Postal Service does not participate in worksharing.	12,13,14	3,4,5,6,7
+c626	defiantly if you live in an apartment right	Defiantly if you live in a house right	6	6
+c627	Little is recorded about this group, but they were probably the ancestors of the Gododdin, whose feats are told in a seventh-century Old Welsh manuscript.	Gododdin's deeds were never written down because it was to be passed down only orally. 	19,20,24	3,4,5
+c628	At the least, he was hired in an attempt to influence administration China policy.	He was hired to influence the British economy.	10,12	4,6
+c629	At Gatehouse, in Kent.	It's in a tent out by the Hundred Acre Woods.	1	3
+c630	We should seek to achieve the most good or benefit, with the least harm and destruction of things that we value, he argued.	He argued that we should recklessly destroy all the things that we care the most about.	12,13	5
+c631	probably so yeah you can get a head start on it	You can't get a head start on it.	4	1
+c632	" ""So your girl writes that your little farewell activity didn't fare so well, eh?"" he chortled."	Your little girl wrote about how well your farewell activity went.	9,10,11,12	5,6
+c633	but West Texas now was a hundred and ten and i didn't mind that at all you know because it was so dry	It was freezing in West Texas and raining.  	5,6,7,8,21,22	2,7
+c634	Pick up a map from the tourist office here and ask about walking tours.	No one is usually at the tourist office, so you'll have to go somewhere else to find out about walking tours.	0,1,2,3,4	0,1,2,3,4
+c635	you want to punch the button and go	You should start going before punching the button.	3,5,6,7	3,4,5,7
+c636	A proserous tourist district, it is full of shopping centers and department stores, along with a number of good restaurants.	The rich tourist district has only gardens and no shops.  	6,7,8,9	8,9
+c637	The South African priest who invited Clinton to do so is quoted in the paper as saying that once Clinton stood up, he was thinking about how much embarrassment it would have caused him by my saying, please sit down.	The South African priest did not know of a person named Clinton.	5,6	4,5,6,11
+c638	'And I don't want to risk a fire fight with what appear to be horribly equal numbers.'	I want to fight.	2,3,4,8	1,2,3
+c639	Unfortunately, the magnet schools began the undoing of desegregation in Charlotte.	Thankful, the magnet schools started segregating people in Charlotte.	0,6,8	0,4,5
+c640	Windows 95 costs about $90 at my local computer superstore.	Windows 95 is no longer sold.	2,3,4,5,6,7,8,9	3,4,5
+c641	oh thank God i've never been to Midland	I go to Midland every other weekend. 	4,5,6	1,2,4,5,6
+c642	A little past the small theater built for local dramatic performances, there's a fine view across the bay to Basse-Terre.	There are no cultural places in the city.	5,6,7,8,9,10	2,3,4
+c643	Consistent with GAO's Congressional Protocols, GAO will then offer the requester(s) a draft of the product that is with the agency for comment.	The GAO has no protocols regarding the submission of the product's draft.	0,1,2,3,4	3,4,5,6,7
+c644	profit rather	Losses rather.	0	0
+c645	LASNNY is one of the oldest and most cost-effective legal services organizations in the United States.	LASNNY is an new legal services organization.	4,5	3
+c646	But, as the last problem I'll outline suggests, neither of the previous two objections matters.	I had only outlined one of the problems.	12	2,4
+c647	Hence, it appears likely that the proportion of LC to AO mail is less for inbound mail than for outbound.	It looks like the proportion of LC to AO mail is more for inbound mail than for outbound.	13,14,15,16	11,12,13,14
+c648	exactly and when i'm sitting here on the sofa cross-stitching and all of a sudden somebody a man's got their hand on my door knob it's like uh like oh no and so i don't i don't like that and i guess the only way to prevent it would be just to pass a city ordinance to prevent that or	I don't ever sit on my sofa and do cross-stitch. 	3,4,5,6,7,8	0,1,2,3,4,5,6
+c649	Civil libertarians denounced it as an improper church-state partnership, a sectarian scheme to milk the taxpayer, and a feel-good diversion from the rest of the coalition's agenda.	Civil libertarians have celebrated the partnership's role in supporting the coalition's core agenda.	2	3
+c650	There are certain categories of control activities that are common to all agencies.	Nothing about agencies are familiar, they are all unique.	9	8
+c651	These are issues that we wrestle with in practice groups of law firms, she said. 	Practice groups are not permitted to work on these issues.	5,6	3,4,5,6
+c652	What Ellison is doing here, as Hemingway did, is equating the process of becoming an artist with that of becoming a man.	Ellison and Hemingway took different ways to compare becoming a man.	5,6,7	4,5
+c653	Mr. Erlenborn attended undergraduate courses at the University of Notre Dame, Indiana University, the University of Illinois, and Loyala University of Chicago.	Mr. Erlenborn earned all of his undergraduate credits at the University of Notre Dame.	7,8,9,10,11,12,13,14,15,16,18,19,21	3,7,8,10,11,12,13
+c654	more of a football powerhouse up there i guess	He's terrible at football there.	4	1
+c655	yeah you can also do the same thing using um if you have ground beef just stir fry the ground beef drain off the oil use the same hoi sin sauce and um some of the frozen mixed vegetables	Fry the beef steak and eat it plain with salt and pepper.	13,14,25,30	2,3,7
+c656	It spoils the sport.	It makes it better.	1	1,2,3
+c657	Czarek was welcomed enthusiastically, even though the poultry brotherhood was paying a lot of sudden attention to the newcomers - a strong group of young and talented managers from an egzemo-exotic chicken farm in Fodder Band nearby Podunkowice.	Czarek was turned away by the group.	2	2,3
+c658	Pat Buchanan followed immediately behind, handing out smallpox-infected blankets and bottles of whiskey.	Pat Buchanan led the group.	2	2
+c659	The census of 1931 served as an alarm signal for the Malay national consciousness.	There wasn't any censuses in Malaysia prior to 1940.	0,1,4	1,2,3
+c660	Nothing prior to May 7, 1915.	Everything is before May 7, 1915.	0	0
+c661	Took forever.	Lasted two years	1	1,2
+c662	you know some of the really the really emotional ones have you followed the Dallas elections on zoning	I hope you haven't been paying any attention to the Dallas elections.	10,11	1,2,3
+c663	That's an opportunity that very few people have had.	Pretty much everyone has that opportunity. 	4,5,6	2
+c664	After four years, Clinton has learned how to avoid looking unpresidential.	After what seems like forever, Clinton still doesn't understand how avoid looking unpresidential.	1,2,4,5	4,6,7,8
+c665	Despite huge projected increases in food production, per capita food consumption in South Asia, the Middle East, and the less-developed nations of Africa will scarcely improve or will actually decline below present inadequate levels.	African nations do not need food to survive. 	7,8,9,10,27,28,29	2,3,4
+c666	Oh! I exclaimed, much relieved. 	I shrieked in terror at the thought, and almost barfed.	2,3,4	1,2,3,7,8,9
+c667	One of them, darker skinned, had hair braided into two lines.	The darker skinned one was bald.	5,6,7	4,5
+c668	They greeted her and she smiled shyly back.	They didn't say anything to the girl.	1	1,2,3
+c669	The Revolutionaries couldn't be dissuaded from destroying most of the cathedral's statues, although 67 were saved (many of the originals are now housed in the Mus??e de l'Oeuvre Notre-Dame next door).	All of the cathedrals statues were saved by the Revolutionaries.	2,3,4,5,6	6
+c670	 8th circa b.c.Greeks colonize Sicily and other southern regions	The Greeks colonized Sicily but never the other southern regions.	5,6,7,8	5,7,8,9
+c671	That word boustrophedon describes writing that goes from left to right on the first line, then right to left on the second, then left to right on the third, and so on; it comes from a Greek word describing the turning in a field of an ox and plow.	Boustrophedon refers to writing that goes from right to left.	8,9,10	7,8,9
+c672	They are built on the site of David's Tower, once the largest and most formidable structure in the castle.	There is nothing where David's Tower used to be.	2,3,5,6,7,8	2,3,4,5,6,7,8
+c673	Wacky Tangent of the  Washington Week in Review host Ken Bode scolded the New York Times Magazine for a Nov. 9 fashion spread he said endorsed the now-discredited fashion trend of heroin chic.	Heroin Chic is in.	27	2,3
+c674	A group of guys went out for a drink after work, and sitting at the bar was a real  a 6 foot blonde with a fabulous face and figure to match.	The men didn't appreciate the figure of the blonde woman sitting at the bar. 	25	2,3
+c675	They said that (1) agencies need to be able to design their procedures to fit their particular circumstances (e.g.	It was stated that the agencies could ignore circumstances related to themselves.	5,6,7,8,9,10,11,12,13,14	6,7
+c676	It is worth a visit, if only to see the theater itself.	It's advisable to skip seeing the place entirely.	2,3,4	1,2,3
+c677	"Clean shaven, I think and dark."""	Unshaven, and bright.	0,1,5	0,2
+c678	They have prominent red protuberances and may have been named after the British redcoats.	They were named for their black skin.	3,13	5
+c679	right after the war	Before the war started.	1	0
+c680	Ca'daan closed the door behind them and retied the not.	Ca'daan strode through the door, leaving it wide open as he began his speech to the assembled nobles.	1,3	7,8
+c681	how long has he been in his present position	How long has did he hold his last position?	7	7
+c682	For example, the moderate scenario assumes a 50% or $1.	Moderate scenario absdorns 0%	7,9	3
+c683	but i think that's probably a good idea	That's definitely a terrible idea.	6	3
+c684	If you still want to join, it might be worked.	It's too late to try anything now because you can't join.	7,8,9	9
+c685	We are concerned that the significant emissions reductions are required too quickly.	We are completely unconcerned about emissions.	2	2,3
+c686	Since The Bell Curve was published, it has become clear that almost everything about it was inexcusably  suspect data, mistakes in statistical procedures that would have flunked a sophomore (Murray--Herrnstein is deceased--clearly does not understand what a correlation coefficient means), deliberate suppression of contrary evidence, you name it.	The Bell Curve's findings have been proven absolutely correct.	16,17,18,19,20,21,22,40,41,42,43,44	6,7,8
+c687	It's very hard to believe, for anyone who knows me well, but I was actually speechless for a period, Zelon said.	Zelon was just as talkative as always and never had a moment of speechlessness.	13,14,15,16,17,18	8,9,10,11,12,13
+c688	'I really don't feel comfortable around people who enjoy making speeches.'	I love being around people who enjoy public speaking.	1,2,3,4	1
+c689	Even after having just seen Adrin's skill with his rapier, Ca'daan had not seen a man move so sure and so naturally with such devastating results.	Ca'daan smirked at Adrin's pathetic rapier moves.	11,12,13,14,15,16,17,18,19,20,21,22,23,24,25	1,2,4,5,6
+c690	At the top, it bore the printed stamp of Messrs. 	They had no idea where the package had came from as it did not have a stamp.	3,4,5,7	12,13,14,16
+c691	"As he emerged, Boris remarked, glancing up at the clock: ""You are early."	Boris remarked, glancing at the clock, 'You are late.'	12	8
+c692	More than half of 800,000 native islanders are children, and the mother is traditionally responsible for bringing them up, handling the money, and making key domestic decisions.	The father is responsable for most of the raising of children in native islander families.	11,12,14	1,2,3
+c693	and you back in you know and or just pull into your spot and uh some you can rent by the year some you can rent daily or nightly or by the week or whatever	The only way of renting them is monthly.	19,20,21	7
+c694	With a little practice almost anyone can flip off to an interesting rock formation and watch the multi-coloured fish pass in review.	It would take years of practice to be able to jump off a rock.	2,3	3,4,5
+c695	A detailed English explanation of the plot is always provided, and wireless recorded commentary units are sometimes available.	You'll have to figure the plot out on your own.	3,17	3,6,7,8,9
+c696	: Adrin's Third Lesson	Adrin's first lesson.	2	1
+c697	The fancifully decorated Macau Palace, a floating casino moored on the western waterfront, is fitted out with gambling tables, slot machines (known locally as hungry tigers ) and, for hungry humans, a restaurant.	Macau Palace is found on the eastern waterfront.	11	6
+c698	She  People are rarely indifferent to the magazines I've put out.	People don't hold a strong opinion to the magazines I've put out.	3,4	1,2,4,5
+c699	well that's right because uh one day it'll be eighty and the next day it'll be about thirty below i tell you what and uh	The temperature is usually in the sixties all the time, it's constant.	5,6,7,8,12,13,14,15	11

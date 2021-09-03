@@ -1,0 +1,101 @@
+data_id	premise	hypothesis	p_indices	h_indices
+c0	This site includes a list of all award winners and a searchable database of Government Executive articles.	The Government Executive articles housed on the website are not able to be searched.	11	9,10,13
+c1	yeah i i think my favorite restaurant is always been the one closest  you know the closest as long as it's it meets the minimum criteria you know of good food	My favorite restaurants are always at least a hundred miles away from my house. 	11,12,14	8,9,10
+c2	i don't know um do you do a lot of camping	I know exactly.	1	
+c3	well that would be a help i wish they would do that here we have got so little landfill space left that we're going to run out before the end of this decade and it's really going to be	We have plenty of space in the landfill.	17	2
+c4	yeah i know and i did that all through college and it worked too	I did that all through college but it never worked 		8
+c5	If that investor were willing to pay extra for the security of limited downside, she could buy put options with a strike price of $98, which would lock in her profit on the shares at $18, less whatever the options cost.	THe strike price could be $8.	24	5
+c6	The most important directions are simply up and up leads eventually to the cathedral and fortress commanding the hilltop, and down inevitably leads to one of three gates through the wall to the new town.	Go downwards to one of the gates, all of which will lead you into the cathedral.	6,8	1
+c7	The bhakti movement of the Tamils brought a new warmth to the hitherto rigid Brahmanic ritual of Hinduism.	The Tamils' bhakti movement froze the previously warm ritual of Hinduism.	9	2
+c8	see now in a situation like that the boys are only sixteen years old and they were sexually involved with her and i think like at that particular point she was twenty three you know so she wasn't really that much older than them and being a boy at that age i think that they're very um you know let's face it that's at a point in your life when you you're just starting to realize all the things of life	Everyone involved was the same age.	11,12,31,32	4,5
+c9	So far, however, the number of mail pieces lost to alternative bill-paying methods is too small to have any material impact on First-Class volume.	The amount of lost mail is huge and really impacts mail volume	15	6
+c10	Sorry but that's how it is.	This is how things are and there are no apologies about it.	0	8
+c11	The tourist industry continued to expand, and though it became one of the top two income earners in Spain, a realization that unrestricted mass tourism was leading to damaging long-term consequences also began to grow.	Tourism is not very big in Spain.	5,13,14,15,16	2,3,4
+c12	Conversely, an increase in government saving adds to the supply of resources available for investment and may put downward pressure on interest rates.	Interest rates should increase to increase saving.	18,19	5,6
+c13	In Hong Kong you can have a plate, or even a whole dinner service, hand-painted to your own design.	It's impossible to have a plate hand-painted to your own design in Hong Kong.	4	1
+c14	What's truly striking, though, is that Jobs has never really let this idea go.	Jobs never held onto an idea for long.	10,13	2,3
+c15	"But to you, who know the truth, I propose to read certain passages which will throw some light on the extraordinary mentality of this great man."" He opened the book, and turned the thin pages."	There is no information on the mentality of the man, extraordinary or not, contained within the thin-paged book. 	15,16,17	2,3
+c16	yeah i mean just when uh the they military paid for her education	The military didn't pay for her education.		2
+c17	but uh these guys were actually on the road uh two thousand miles from from home when they had to file their uh their final exams and send them in	These men filed their midterm exams from home. 	10,11,12	
+c18	He hadn't seen even pictures of such things since the few silent movies run in some of the little art theaters.	He had recently seen pictures depicting those things.	1	
+c19	yeah and how about how about like on the weekends do you do sports or do you go out	No one plays sports on the weekend.		0,1
+c20	Oh, what a fool I feel! 	I am beyond proud.	3	3
+c21	She has exchanged a hollow life for a heightened life, and has tried to comprehend all its turns, get its possibilities.	She has chose to live a hollow life.	2,6	2
+c22	the net cost of operations.	The gross cost.	0,1,4	0,1
+c23	Credibility is a vital factor, and Jim Lehrer does, indeed, have it.	Jim Lehrer has no credibility whatsoever.		3
+c24	Even if you're the kind of traveler who likes to improvise and be adventurous, don't turn your nose up at the tourist offices.	There's nothing worth seeing in the tourist offices.	14,15,16,17,18	1,2
+c25	Still, it would be interesting to know. 109 Poirot looked at me very earnestly, and again shook his head. 	Poirot did not look at me.		1,2
+c26	There are no shares of a stock that might someday come back, just piles of options as worthless as those shares of Cook's American Business Alliance.	 Cook's American Business Alliance caused shares of stock to come back.	2	
+c27	One thing was worrying me dreadfully, but my heart gave a great throb of relief when I saw my ulster lying carelessly over the back of a chair.	I was dreadfully worried about many things. 	0	5
+c28	Do you think Mrs. Inglethorp made a will leaving all her money to Miss Howard? I asked in a low voice, with some curiosity. 	I yelled at the top of my lungs.	19,20	1
+c29	oh i don't know either the other growing up all i knew was	I know because I learned it growing up	2	
+c30	WHOLE LIFE POLICIES - Policies that provide insurance over the insured's entire life and the proceeds (face amount) are paid only upon death of the insured.	Whole life policies are a type of life insurance that only cover the insured person until retirement from the workforce.	11,12	10,15,16
+c31	it's actually there well Iraq has had uh designs on that place since nineteen twenty two so you know it wasn't like something that just suddenly popped up	The weird thing is that Iraq was never interested in that place until now.	13,14,15,20,25,26,27	7,12,13
+c32	Prototyping, for example, may act as part of the requirements definition process, helping the agency identify and control areas of high uncertainty and technical risk.	Prototyping is not important, testing with the actual finished product is better.	12	2,3
+c33	if the United States had used full conventional power.	The United States has no power to use.	5,6	4
+c34	June 21, 1995, provides the specific requirements for assessing and reporting on controls.	There are no specific requirements for assessment.	3	2
+c35	This is especially true on Menorca, where cold winter winds limit the season's length.	This is especially untrue on Menorca, where warm summer weather extends the season's length.	7,8,10	7,8,10
+c36	Over most of the 1980s and 1990s, the U.S. was able to invest more than it saved by attracting financing from abroad.	The US could save more than it invested in the 1980's and 90's.	12,16	3,7
+c37	In 1998, Cesar Chavez fasted for 36 days in California to underscore the dangers of pesticides to farm workers and their children.	Cesar Chavez was not concerned about the dangers of pesticide use.	11	3,4
+c38	However, in the off-field (sentimental) tournament, the Falcons and Jets have more appealing story lines.	The Jets and Falcons have boring stories.	12	5
+c39	They made little effort, despite the Jesuit presence in Asia, to convert local inhabitants to Christianity or to expand their territory into the interior.	The Jesuit presence in Asia helped to convert local residents to Christianity, allowing them to expand their territory. 	2,4	5
+c40	Dirt mounds surrounded the pit so that the spectators stood five or six people deep around the edge of the pit.	The ground is totally flat.	1	4
+c41	"There's only one thing for me to do."""	There's a few things left for me to do.	1,2	1,2
+c42	Sometimes it flattens entire neighbourhoods to make life easier for them.	All neighborhoods are perfectly safe in their pursuit of an easier life.	2	4
+c43	You will find two principal  fino and olorose	You won't find any fino or olorose.	1	1
+c44	"The sooner we strike the better."" He turned to Tuppence."	He convinced Tuppence to hold off on their action plan. 	1,5	4,5
+c45	The WP runs a piece inside reporting that during a church service last Sunday, Cardinal John O'Connor of New York criticized President Clinton from the pulpit for taking Catholic communion while in South Africa.	The WP runs a piece outside reporting 	5	5
+c46	For big Raj-buffs, the supreme example of Indo-Gothic style is the Victoria Terminus, affectionately abbreviated to VT nowadays, once the railway station that launched adventures inland, now handling mostly suburban traffic.	The Victoria Terminus is still the main departure point for travelers heading deeper into the country.	18	4
+c47	The only drawback is, of course, the large crowds in summer.	It is pretty much deserted in July.	7,8	4
+c48	were sort of a double sign with a a big miles per hour and a little kilometers per hour type uh marking on the side	A sign that only displays mph.	13,14,16	3,5
+c49	Another alternative is that our heroes were pursuing the noble goal of academics everywhere--tenure.	Our heroes aren't going for any academic goals. 		2
+c50	By then, the program had added Carroll and Grayson counties and the city of Galax and had five attorneys.	The program had only one single attorney.	17	3,4
+c51	Well? cried Tommy eagerly.	Tommy didn't speak.		1
+c52	Even the lower limit of that differential compounds to a hefty sum over time.	The differential will not grow.	7,8,10,11	3,4
+c53	The flame or whatever it was had enough heat, but it was hard to control.	The flame was easy to control, but lacked heat. 	7,12	3,7
+c54	um pardon me	I don't apologize.	1	1,2
+c55	"Tell me, how did those scribbled words on the envelope help you to discover that a will was made yesterday afternoon?"" Poirot smiled. "	How could you not figure out that there was a will written yesterday?		3
+c56	of course you could annex Cuba but they wouldn't like that a bit	Annexing Cuba is a great idea.	8,9	3,4,5
+c57	They are levied through the power of the Government to compel payment, and the person or entity that pays these fees does not receive anything of value from the Government in exchange.	They are not levied through the power of the Government to compel payment.		2
+c58	Sir James's presence in Manchester was not accidental.	Manchester was not the place that Sir James had intended to go.		2
+c59	well i think i got to agree with you there	I could not agree with you.		2
+c60	The Balanced Scorecard Institute is a web clearinghouse for managers to exchange information, ideas, and lessons learned in building strategic management systems using the balanced scorecard approach.	The Balanced Scorecard has recently closed due to a lack of interest.		5
+c61	"Even us if you needed,"" said Jon."	He told them not to ask him to lift a finger.		3
+c62	News berates computer users for picking obvious, easily cracked passwords and chastises system administrators for ignoring basic security precautions.	News outlets do not blame users or system administrators for security breaches. 		3
+c63	No one was there, no bones at all.	There were many bones in a pile.	4	2
+c64	well that's uh i agree with you there i mean he didn't have the surrounding cast that Montana had there's no doubt about that	I don't agree when you say that he didn't have as much support as Montana.	20,21	1
+c65	There are many such at the present time.	There are none at all.	2	2
+c66	It was planned in the 1820s as a symbol of Scottish national pride and designed as a mini-Parthenon, in deference to the neoclassical style popular at the time.	It was designed to look just like the White House.  	17	5,8,9
+c67	A re-created street of colonial Macau is lined with traditional Chinese shops.	This street, formerly a colonial site, is now home to modern high-rise development.	10	4
+c68	it would probably be a lot more work and probably not turn out as good	Oh that way sounds great, it could turn out even better	10	
+c69	During the half-century of its existence, Israel has absorbed approximately 2.5 million Jewish immigrants, displaced persons, refugees, and survivors of the Nazi Holocaust.	Israel shunned the Jewish people from entering to escape the Nazi Holocaust.	8	1
+c70	Also, under credit reform, the credit subsidy cost is recorded as an outlay when a direct or guaranteed loan is disbursed.	The credit subsidy cost is never recorded as an outlay under any circumstances.		5,11
+c71	OMB has approved the information collection contained on the Form ADV and has	OMB staunchly opposed the information collection contained on the Form ADV.	2	2
+c72	Finally, the FDA will conduct workshops, issue guidance manuals and videotapes, and hold teleconferences to aid small entities in complying with the rule.	The FDA will only issue videotapes.	5	3
+c73	uh-huh well maybe well i've enjoyed talking to you okay bye-bye	I hated talking to you.	5	1
+c74	Tom is the winner of a year's supply of Turtle Wax, and he will receive his prize just as soon as the Shopping Avenger figures out how much Turtle Wax actually constitutes a year's supply.	There are no winners of the one year supply of Turtle wax.		2
+c75	That is well. 	That is unwell.	2	2
+c76	Divers can explore the deeps but you can also snorkel here, or take a glass-bottom boat or submarine tour to get a glimpse of this watery world.	Divers do not like to explore the deeps here.  		2
+c77	Why blame her because she had been true to her creed? 	She was not faithful to her own belief system.		2
+c78	Oh, my friend, have I not said to you all along that I have no proofs. 	I've always had the proof that he did it.	14	
+c79	Companies that were foreign had to accept Indian financial participation and management.	Foreign companies had to take Italian money.	7	5
+c80	And really it's a great relief to think he's going, Hastings, continued my honest friend. 	"""Are you sure we can't do anything to keep him here?,"" admitted my long-time nemesis."	5	0,1,2,3,4
+c81	Like the Japanese, Chinese, and Portuguese before them, many of the new peoples would stay on in Hawaii, adding to the ethnic and racial mix that has become a hallmark of the islands.	Hawaii was homogenous. 	2,3,5,21,23,24	2
+c82	It was other-worldly.	It was grounded in reality.	2	4
+c83	Voluntariness of risks is evaluated.	No evaluation is being done of risks.		0
+c84	Thus, the net scale benefit is initially positive, whether or not we adjust for the wage premium.	Initial net scale benefits are negative when adjusted for the wage premium.	7	5
+c85	The stuff was strong, but somewhat brittle.	It was incredibly strong and not brittle at all.	5	5,7,8
+c86	yeah because being a student i'm doing it for the money	I'm no longer a student, so I don't need the money anymore.		1,2,7
+c87	well i think of uh you mean as far as retirement	You never discuss retirement.	6	1
+c88	If you have any questions about this report, please contact Henry R. Wray, Senior Associate General Counsel, at (202) 512-8581.	Henry R. Wray can be reached at (555) 512-8581.	0	7
+c89	Your speeches are inflammatory.	Your speeches are so calming.	3	4
+c90	Given the limits on the WTO's jurisdiction, it was probably unreasonable of Kodak to expect a real victory.	Kodak was totally justified in expecting a victory.	10	3,4
+c91	Back to the subject of celebrity interviews, British magazines have published a huge number with actress Kate Winslet, the star of Titanic , to promote a new British film she has made.	British magazines boycotted Kate Winslet.	10,12,13	2
+c92	aChange in personal saving depends on how much of the $4,000 IRA contribution represents new saving.	The IRA contributes nothing to saving	6,7,8	3
+c93	As of last week he charges $50 an hour minimum instead of $25 for the services of his yearling Northern Utah Legal Aid Foundation.	His charges went down.	6,10,1,12	2,3
+c94	7) Nonautomated First-Class and Standard-A mailers have the option of requesting that their mail be processed manually, even though the costs for such processing are substantially higher than mechanized processing.	Nonautomated First-Class and Standard-A mailers cannot ask for their mail to be processed by hand because it costs the postal service more.	8	5
+c95	um-hum yeah right uh is yours a is it a a slab foundation or pier and beam	Your foundation is being beamed away.	11,12	4,5
+c96	Although all four categories of emissions are down substantially, they only achieve 50-75% of the proposed cap by 2007 (shown as the dotted horizontal line in each of the above figures).	All of the emission categories experienced a downturn except for one.	1,2	8,9,10
+c97	i don't know i i do i can think of all the uh the biblical things about it too where what did they say to uh i can't think of the scripture Render unto Caesar's what is Caesar's so	I do not know about the bible or its scriptures.	7,1	2,3
+c98	Others love to see it in the middle of the heaviest monsoon, its marble translucent, its image blurred in the rain-stippled water channels of its gardens.	None of the visitors like to see it during the monsoon.	1	0
+c99	Previously, at the request of the Republican Ranking Minority Member of the House Committee on Government Operations, GAO reviewed activities of President Clintonas Task Force on Health Care Reform and was provided with an extensive listing of working group participants drawn from the government and from outside organizations.	GAO solely investigated the activities of President Clinton's Task Force on their own accord.	1,1,3,1	1,12,13
