@@ -1,16 +1,16 @@
 # Explaining Text Matching on Neural Natural Language Inference
 
 This is the implementation for the model that was proposed 
-in our paper "[Explaining Text Matching on Neural Natural Language](https://dl.acm.org/doi/abs/10.1145/3418052)", which is published in ACM Transactions on Information Systems (September 2020).
+in our paper "[Explaining Text Matching on Neural Natural Language](https://dl.acm.org/doi/abs/10.1145/3418052)", which was published in ACM Transactions on Information Systems (September 2020).
 
 
 ## Datasets
 
-This code use GLUE version of MultiNLI dataset 
+This code uses GLUE version of MultiNLI dataset 
 and our own annotation for the token-level explanation.
 * The annotation for the token-level explanation is included in this repository.
 
-* BERT chceckpoint and MultiNLI dataset need to be downloaded with the following command.
+* BERT checkpoint and MultiNLI dataset need to be downloaded with the following command.
 ```
 python dev/download_data.py
 ```
