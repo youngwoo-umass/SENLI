@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 import datetime
 from functools import partial
 from typing import Tuple, Callable, List, Dict

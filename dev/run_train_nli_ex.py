@@ -24,6 +24,7 @@ from path_manager import bert_model_folder
 def main():
     # Train the model here
     debug_run = False
+    senli_logging.info("Start train NLI with explanation")
     if debug_run:
         senli_logging.warning("DEBUGGING in use")
     bert_params = bert.params_from_pretrained_ckpt(bert_model_folder)

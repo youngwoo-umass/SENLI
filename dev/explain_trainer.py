@@ -1,10 +1,9 @@
 import numpy as np
 import tensorflow as tf
 
-from delete_trsfmr import *
+from dev.delete_trsfmr import *
 from misc_lib import *
 from senli_log import senli_logging
-from trainer.np_modules import *
 
 
 # Step 1) Prepare deletion RUNS
