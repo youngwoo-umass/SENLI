@@ -1,5 +1,4 @@
-# Explaining Text Matching on Neural Natural Language
-Inference
+# Explaining Text Matching on Neural Natural Language Inference
 
 This is the implementation for the model that was proposed 
 in our paper "[Explaining Text Matching on Neural Natural Language](https://dl.acm.org/doi/abs/10.1145/3418052)", which is published in ACM Transactions on Information Systems (September 2020).
@@ -9,27 +8,27 @@ in our paper "[Explaining Text Matching on Neural Natural Language](https://dl.a
 
 This code use GLUE version of MultiNLI dataset 
 and our own annotation for the token-level explanation.
-
-* MultiNLI dataset can be downloaded with the following command.
-```
-python dev/download_mnli.py
-```
 * The annotation for the token-level explanation is included in this repository.
-* For the training, you need to separately download [BERT-Base](https://storage.googleapis.com/bert_models/2020_02_20/uncased_L-12_H-768_A-12.zip)
-and set the checkpoint path in the `bert_model_folder` variable in `path_manager.py`.
-  
+
+* BERT chceckpoint and MultiNLI dataset need to be downloaded with the following command.
+```
+python dev/download_data.py
+```
+
 ## Training
 
+Once the BERT checkpoint and MultiNLI dataset is downloaded you can start training with the following commands.
+
 ```angular2html
-PYTHONPATH=. python3 -u dev/run_train_nli_ex.py \
-    --init_checkpoint=saved_model/run1 \
-    --checkpoint_type=nli_saved_model \
-    --model_save_path=saved_model/ex_run5 
-PYTHONPATH=. python3 -u dev/run_ex_eval.py \
-    saved_model/ex_run5
+python3 -u run_train_nli_ex.py \
+--init_checkpoint=data/bert_model.ckpt \
+--checkpoint_type=bert \
+--model_save_path=saved_model/ex_run
 ```
 
-## Models
+## Trained model
+
+You can download the trained SENLI model from [here](https://drive.google.com/file/d/1c1G1sjLXh_brHnrfS-DXGcUvDOHiFA8P/view?usp=sharing).
 
 
 ## Reference
