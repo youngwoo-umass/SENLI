@@ -1,6 +1,4 @@
-import argparse
 import datetime
-import sys
 from functools import partial
 from typing import Tuple, Callable, List, Dict
 
@@ -17,50 +15,9 @@ from dev.explain_trainer import ExplainTrainerM
 from dev.nli_common import tags
 from dev.optimize import get_optimizer
 from dev.tf_helper import apply_gradient_warning_less, distribute_dataset
-from misc_lib import average
+from dev.train_conf import RunConfigEx, ExTrainConfig
+from misc_lib import average, two_digit_float
 from senli_log import senli_logging
-
-
-class RunConfigEx:
-    batch_size = 16
-    num_classes = 3
-    train_step = 0
-    eval_every_n_step = 100
-    save_every_n_step = 5000
-    learning_rate = 2e-5
-    model_save_path = "saved_model_ex"
-    init_checkpoint = ""
-    checkpoint_type = "bert"
-
-
-def get_run_config() -> RunConfigEx:
-    parser = argparse.ArgumentParser(description='File should be stored in ')
-    parser.add_argument("--model_save_path")
-    parser.add_argument("--init_checkpoint")
-    parser.add_argument("--checkpoint_type")
-    args = parser.parse_args(sys.argv[1:])
-    run_config = RunConfigEx()
-    nli_train_data_size = 392702
-    step_per_epoch = int(nli_train_data_size / run_config.batch_size)
-
-    if args.model_save_path:
-        run_config.model_save_path = args.model_save_path
-
-    run_config.checkpoint_type = args.checkpoint_type
-
-    if args.init_checkpoint:
-        run_config.init_checkpoint = args.init_checkpoint
-
-    if run_config.checkpoint_type in ["none", "bert"]:
-        num_epoch = 2
-    elif run_config.checkpoint_type == "nli_saved_model":
-        num_epoch = 1
-    else:
-        assert False
-
-    run_config.train_step = num_epoch * step_per_epoch
-
-    return run_config
 
 
 @tf.function
@@ -84,13 +41,6 @@ def distributed_train_step(mirrored_strategy, train_step_fn, dist_inputs: Tuple)
     new_global_step = global_step + 1
     global_step.assign(new_global_step)
     return loss
-
-
-class ExTrainConfig:
-    num_deletion = 20
-    g_val = 0.5
-    save_train_payload = False
-    drop_thres = 0.3
 
 
 def init_ex_trainer(bert_cls_ex: BERT_CLS_EX,
@@ -252,9 +202,6 @@ score_valid_policy = {
 }
 
 
-def two_digit_float(f):
-    return "{0:.2f}".format(f)
-
 
 def dict_to_tuple_list(d):
     out_l = []
@@ -387,8 +334,6 @@ def load_checkpoint(bert_cls_ex: BERT_CLS_EX, run_config: RunConfigEx):
 
 def init_log():
     current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    # train_log_dir = 'logs/gradient_tape/' + current_time + '/train'
     test_log_dir = 'logs/gradient_tape/' + current_time + '/test'
-    # train_summary_writer = tf.summary.create_file_writer(train_log_dir)
     test_summary_writer = tf.summary.create_file_writer(test_log_dir)
     return test_summary_writer

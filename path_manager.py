@@ -10,6 +10,6 @@ bert_voca_path = pjoin(data_path, "bert_voca.txt")
 mnli_dir = pjoin(data_path, "MNLI")
 mnli_ex_dir = pjoin(data_path, "mnli_ex")
 
-bert_model_folder = "c:\\work\\code\\Chair\\output\\model\\runs\\uncased_L-12_H-768_A-12"
+bert_model_folder = NotImplemented
 
 #

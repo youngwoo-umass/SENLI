@@ -22,6 +22,7 @@ class RunConfig:
     model_save_path = "saved_model"
     init_checkpoint = ""
 
+
 class ModelConfig:
     max_seq_length = 300
     num_classes = 3

@@ -1,8 +1,9 @@
 from typing import List
 
 from dev.ex_eval import load_nli_ex_eval_encoded, EvalSet
-from dev.train_nli_ex import RunConfigEx, get_run_config, train_cls, distributed_train_step, init_ex_trainer, \
+from dev.train_nli_ex import train_cls, distributed_train_step, init_ex_trainer, \
     get_cls_logits, EvalObject, ExEvaluator, load_checkpoint, init_log
+from dev.train_conf import RunConfigEx, get_run_config
 from senli_log import senli_logging
 
 from typing import Tuple

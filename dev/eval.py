@@ -2,10 +2,10 @@ import os
 import re
 from typing import Tuple
 
-from tqdm import tqdm
 
 from dev.nli_common import get_nli_data
-from dev.bert_common import BERT_CLS, eval_fn, get_run_config, ModelConfig
+from dev.bert_common import BERT_CLS, eval_fn, ModelConfig
+from dev.train_conf import get_run_config
 from senli_log import senli_logging
 
 import bert
@@ -44,7 +44,7 @@ def main():
     model.load_weights(model_save_path)
     dev_loss.reset_state()
 
-    for batch in tqdm(eval_batches):
+    for batch in eval_batches:
         eval_fn(model, batch, compute_loss, dev_loss, dev_acc)
 
     print("Dev loss: {}".format(dev_loss.result().numpy()))
